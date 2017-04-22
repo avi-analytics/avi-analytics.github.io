@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>
+        BASIC blog full text feed    </title>
+        <link href="/blog/atom.xml" rel="self" />
+    
+        <link href="/"/>
+    
+        
+    <updated>2017-04-06T00:03:27Z</updated>
+
+    <id>/blog/atom.xml/</id>
+
+            <entry>
+            <title type="html">Union Budget 2017</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/budget.html"/>
+            <updated>2017-04-02T10:00:00Z</updated>
+            <published>2017-04-02T10:00:00Z</published>
+            <id>/blog/budget.html</id>
+                        <category   scheme="/blog/tags"
+                        term="mathematical"
+                        label="Mathematical" />
+                        <category   scheme="/blog/tags"
+                        term="finance"
+                        label="Finance" />
+            
+            <content type="html">
+                                &lt;p&gt;Union Budget is a gold mine of data and information. Useful information is often buried deep in it&amp;#8217;s cracks and crevices. I ferret out
+a few numbers and graphs to compare projected tax collection and expenditure growth rate patterns with last year&amp;#8217;s actual figures.
+&lt;img alt=&#34;GitHub Logo&#34; src=&#34;/media/images/tax1.png&#34; /&gt;
+Total annual expenditure of central government is
+budgeted at &lt;span class=&#34;caps&#34;&gt;INR&lt;/span&gt; 2.1 trillion which is a meagre 6.56% higher than last&amp;nbsp;year.&lt;/p&gt;
+&lt;p&gt;This figure should be contrasted with last year’s increase of around 12.48 percentage points.
+Ranking major items by percentage increase in public spending reveals interesting patterns. Health, Energy, Transport, Social Welfare,
+and &lt;span class=&#34;caps&#34;&gt;IT&lt;/span&gt; have received above-average allocations; while Agriculture and Allied
+sectors, Defense, and Education have received average allocations. Agriculture and Allied sectors and Development of North East are interesting items where allocation has been sharply reduced in relative terms.
+&lt;img alt=&#34;GitHub Logo&#34; src=&#34;/media/images/budgetexpenditure.png&#34; /&gt;&lt;/p&gt;            </content>
+        </entry>
+    </feed>

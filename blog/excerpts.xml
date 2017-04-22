@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>
+        BASIC blog excerpts feed    </title>
+        <link href="/blog/excerpts.xml" rel="self" />
+    
+        <link href="/"/>
+    
+        
+    <updated>2017-04-06T00:03:27Z</updated>
+
+    <id>/blog/excerpts.xml/</id>
+
+            <entry>
+            <title type="html">Union Budget 2017</title>
+            <author><name>Lakshmi Vyasarajan</name></author>
+            <link href="/blog/budget.html"/>
+            <updated>2017-04-02T10:00:00Z</updated>
+            <published>2017-04-02T10:00:00Z</published>
+            <id>/blog/budget.html</id>
+                        <category   scheme="/blog/tags"
+                        term="mathematical"
+                        label="Mathematical" />
+                        <category   scheme="/blog/tags"
+                        term="finance"
+                        label="Finance" />
+            
+            <content type="html">
+                
+                &lt;p&gt;Union Budget is a gold mine of data and information. Useful information is often buried deep in it&amp;#8217;s cracks and crevices. I ferret out
+a few numbers and graphs to compare projected tax collection and expenditure growth rate patterns with last year&amp;#8217;s actual&amp;nbsp;figures.&lt;/p&gt;            </content>
+        </entry>
+    </feed>
