@@ -1,1 +1,16 @@
 /* css styles */
+.navbar-logo {
+  height: 77px !important;
+  max-height: 77px !important;
+}
+
+.quarto-title-block, .quarto-title, .quarto-title-meta, .quarto-title-banner .content {
+  text-align: center !important;
+  width: 100% !important;
+}
+
+header#title-block-header.quarto-title-block.default .quarto-title.column-page-left,
+header#title-block-header.quarto-title-block.default .quarto-title-meta.column-page-left {
+  grid-column: screen-start/screen-end !important;
+  text-align: center !important;
+}
