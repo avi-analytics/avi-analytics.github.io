@@ -1,7 +1,8 @@
 /* css styles */
 .navbar-logo {
-  height: 77px !important;
-  max-height: 77px !important;
+  height: clamp(20px, 4vw, 60px) !important;
+  max-height: none !important;
+  width: auto;
 }
 
 .quarto-title-block, .quarto-title, .quarto-title-meta, .quarto-title-banner .content {
