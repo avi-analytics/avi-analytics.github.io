@@ -1,6 +1,6 @@
 /* css styles */
 .navbar-logo {
-  height: clamp(20px, 4vw, 60px) !important;
+  height: clamp(20px, 6vw, 60px) !important;
   max-height: none !important;
   width: auto;
 }
