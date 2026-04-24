@@ -238,6 +238,26 @@ Number of unconstrained SWFs: 10314424798490535546171949056</code></pre>
 </div>
 </div>
 <p>Even in this tiny setting, brute force is hopeless: there are <code>6^36</code> possible complete SWFs. Instead, we combine search with constraint propagation.</p>
+<section id="from-preferences-to-a-social-welfare-function" class="level3">
+<h3 class="anchored" data-anchor-id="from-preferences-to-a-social-welfare-function">From preferences to a social welfare function</h3>
+<p>The notebook moves through three objects:</p>
+<ul>
+<li>A single voter’s preference is a ranking such as <code>"abc"</code>, meaning <code>a &gt; b &gt; c</code>.</li>
+<li>A preference profile is one ranking for voter <code>A</code> and one for voter <code>B</code>, encoded as a string like <code>"abc&amp;acb"</code>.</li>
+<li>A social welfare function (SWF) assigns one social ranking to each possible profile.</li>
+</ul>
+<p>With three alternatives there are <code>3! = 6</code> possible rankings, so <code>RANKINGS</code> is a list of six strings. A profile is an ordered pair of rankings, so <code>PREFERENCE_PROFILES</code> has <code>6 x 6 = 36</code> elements.</p>
+<p>An unconstrained SWF must choose one of six social rankings for each of those 36 profiles. That is why the raw search space has size <code>6^36</code>: there are 36 independent inputs, and each input has 6 possible outputs.</p>
+<p>In Python, the representation is deliberately concrete:</p>
+<ul>
+<li>each ranking is a <code>str</code>, for example <code>"bac"</code></li>
+<li>each profile is a <code>str</code>, for example <code>"bac&amp;cba"</code></li>
+<li>a complete SWF is a dictionary <code>dict[str, str]</code> mapping each profile to exactly one social ranking</li>
+<li>during search, we store domains rather than a completed SWF, using <code>dict[str, list[str]]</code></li>
+</ul>
+<p>So <code>INITIAL_SWF_DOMAINS</code> does not store one function. It stores all still-possible functions compactly by recording, for each profile, the list of social rankings that remain available. Initially every profile can map to any of the six rankings, so every value is <code>RANKINGS.copy()</code>.</p>
+<p>Later, unanimity and IIA shrink these per-profile lists. Once every list has length 1, the remaining dictionary corresponds to one fully specified SWF.</p>
+</section>
 </section>
 <section id="basic-preference-comparison-helpers" class="level2">
 <h2 class="anchored" data-anchor-id="basic-preference-comparison-helpers">2. Basic preference comparison helpers</h2>
