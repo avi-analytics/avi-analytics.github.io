@@ -275,6 +275,10 @@ function renderDetailLayer(geojson, metadata, name) {
   
   activeCityLayer = createLayer(geojson, "lst_c", manifest.palette, "LST");
   activeCityLayer.addTo(map);
+  const bounds = activeCityLayer.getBounds?.();
+  if (bounds && bounds.isValid()) {
+    map.fitBounds(bounds, { padding: [24, 24], maxZoom: 13 });
+  }
   setStatus(`${name} | ${metadata.source} | ${metadata.scene_date}`);
 }
 
