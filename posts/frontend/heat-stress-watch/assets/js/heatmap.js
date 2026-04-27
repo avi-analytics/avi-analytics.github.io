@@ -26,7 +26,8 @@ let selectedPointMarker;
 let currentGeojson;
 let currentValueField;
 let isLive = false;
-let apiBase = ""; 
+let apiBase = "";
+const liveCheckTimeoutMs = 5000;
 
 map.on("click", (e) => {
   if (!isLive) return;
@@ -199,7 +200,7 @@ async function checkLiveServer() {
     try {
       console.log(`Checking live server at ${target}/api/ping...`);
       const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 800);
+      const timeoutId = setTimeout(() => controller.abort(), liveCheckTimeoutMs);
       const res = await fetch(`${target}/api/ping`, { signal: controller.signal });
       clearTimeout(timeoutId);
       
@@ -230,7 +231,16 @@ async function fetchLiveHeatmap(lat, lon, name) {
   setStatus(`Requesting live GEE data for ${name}...`);
   const url = `${apiBase}/api/city-heat?lat=${lat}&lon=${lon}&name=${encodeURIComponent(name)}`;
   const response = await fetch(url);
-  if (!response.ok) throw new Error("Live API failed");
+  if (!response.ok) {
+    let detail = "Live API failed";
+    try {
+      const payload = await response.json();
+      detail = payload.detail || detail;
+    } catch (error) {
+      // Fall back to the generic message when the response body is not JSON.
+    }
+    throw new Error(detail);
+  }
   return response.json();
 }
 
@@ -242,7 +252,7 @@ async function requestLiveHeatmapForPoint(lat, lon) {
     const data = await fetchLiveHeatmap(lat, lon, `Point (${lat.toFixed(2)}, ${lon.toFixed(2)})`);
     renderDetailLayer(data.geojson, data.metadata, "Custom Selection");
   } catch (err) {
-    setStatus("Live computation failed.");
+    setStatus(`Live computation failed: ${err.message}`);
   } finally {
     analyzeBtn.disabled = false;
     analyzeBtn.textContent = "Get Heatmap";

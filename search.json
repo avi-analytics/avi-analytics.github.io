@@ -53,7 +53,7 @@
     "href": "posts/frontend/heat-stress-watch/index.html",
     "title": "Heat Stress Watch",
     "section": "",
-    "text": "Local heat map watcher. The heatmap is based on median temperature of last 45 days. Zoom to the locality, select the location, and click heatmap. You can select temperature range for visualization.\n\n\n\n\n\n\n\n  \n    \n      Heat Stress Watch\n      ● LIVE GEE MODE\n    \n    Initializing...\n    \n      \n        Temp Filter:\n        \n        0 - 60°C\n        \n      \n      Back to India\n      Clear Selection\n      Get Heatmap"
+    "text": "Heat Stress Watch\n      ● LIVE GEE MODE\n    \n    Initializing...\n    \n      \n        Temp Filter:\n        \n        0 - 60°C\n        \n      \n      Back to India\n      Clear Selection\n      Get Heatmap"
   },
   {
     "objectID": "posts/impossibility_theorem/theorem.html",
