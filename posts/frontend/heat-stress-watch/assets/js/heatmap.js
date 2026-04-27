@@ -315,7 +315,6 @@ async function initialize() {
 
   cityIndexLayer = createCityIndexLayer(cityIndexGeojson);
 
-  cityIndexLayer.addTo(map);
   map.fitBounds(cityIndexLayer.getBounds());
   setStatus("Choose a city or point and request a heatmap.");
 }
