@@ -25,7 +25,8 @@ let currentGeojson;
 let currentValueField;
 let isLive = false;
 let apiBase = "";
-const liveCheckTimeoutMs = 5000;
+const liveCheckTimeoutMs = 12000;
+let configuredTargets = [];
 
 map.on("click", (e) => {
   if (!isLive) return;
@@ -174,48 +175,95 @@ function normalizeApiBase(value) {
   return String(value).replace(/\/+$/, "");
 }
 
-async function checkLiveServer() {
+function setLiveState(target) {
+  isLive = true;
+  apiBase = target;
+  if (liveIndicator) liveIndicator.style.display = "block";
+  if (filterControls) filterControls.style.display = "flex";
+  analyzeBtn.textContent = "Get Heatmap";
+  analyzeBtn.onclick = requestLiveHeatmapForCenter;
+}
+
+function setOfflineState() {
+  isLive = false;
+  if (filterControls) filterControls.style.display = "none";
+  analyzeBtn.textContent = "Get Heatmap (Offline)";
+  analyzeBtn.onclick = requestLiveHeatmapForCenter;
+}
+
+async function buildLiveTargets() {
   const apiConfig = await loadApiConfig();
-  const configuredTargets = [
+  return [...new Set([
     normalizeApiBase(window.HEATMAP_API_BASE),
     normalizeApiBase(apiConfig.api_base),
-  ].filter(Boolean);
-  const targets = [...new Set([
-    ...configuredTargets,
     "",
     "http://localhost:8080",
     "http://127.0.0.1:8080",
-  ])];
+  ].filter(Boolean))];
+}
+
+async function probeLiveTarget(target) {
+  console.log(`Checking live server at ${target}/api/ping...`);
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), liveCheckTimeoutMs);
+  try {
+    const res = await fetch(`${target}/api/ping`, { signal: controller.signal });
+    return res.ok;
+  } finally {
+    clearTimeout(timeoutId);
+  }
+}
+
+async function checkLiveServer() {
+  configuredTargets = await buildLiveTargets();
   
-  for (const target of targets) {
+  for (const target of configuredTargets) {
     try {
-      console.log(`Checking live server at ${target}/api/ping...`);
-      const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), liveCheckTimeoutMs);
-      const res = await fetch(`${target}/api/ping`, { signal: controller.signal });
-      clearTimeout(timeoutId);
-      
-      if (res.ok) {
-        isLive = true;
-        apiBase = target;
-        if (liveIndicator) liveIndicator.style.display = "block";
-        if (filterControls) filterControls.style.display = "flex";
-        analyzeBtn.textContent = "Get Heatmap";
-        analyzeBtn.onclick = requestLiveHeatmapForCenter;
+      if (await probeLiveTarget(target)) {
+        setLiveState(target);
         console.log(`Live GEE server found at ${target}`);
-        return;
+        return true;
       }
     } catch (e) {
       // Continue to next target
     }
   }
   
-  isLive = false;
-  if (filterControls) filterControls.style.display = "none";
-  analyzeBtn.textContent = "Get Heatmap (Offline)";
-  analyzeBtn.onclick = () => {
-      alert("Live mode is offline. To enable: run python backend/app.py and visit the deployed backend URL.");
-  };
+  setOfflineState();
+  return false;
+}
+
+async function ensureLiveServer() {
+  if (isLive) return true;
+
+  if (configuredTargets.length === 0) {
+    configuredTargets = await buildLiveTargets();
+  }
+
+  setStatus("Checking live backend...");
+  analyzeBtn.disabled = true;
+  analyzeBtn.textContent = "Checking...";
+  try {
+    for (let attempt = 0; attempt < 2; attempt += 1) {
+      for (const target of configuredTargets) {
+        try {
+          if (await probeLiveTarget(target)) {
+            setLiveState(target);
+            return true;
+          }
+        } catch (error) {
+          // Retry the next target or attempt.
+        }
+      }
+    }
+
+    setOfflineState();
+    setStatus("Live backend is unavailable right now. Please try again in a moment.");
+    return false;
+  } finally {
+    analyzeBtn.disabled = false;
+    analyzeBtn.textContent = isLive ? "Get Heatmap" : "Get Heatmap (Offline)";
+  }
 }
 
 async function fetchLiveHeatmap(lat, lon, name) {
@@ -236,7 +284,7 @@ async function fetchLiveHeatmap(lat, lon, name) {
 }
 
 async function requestLiveHeatmapForPoint(lat, lon) {
-  if (!isLive) return;
+  if (!(await ensureLiveServer())) return;
   try {
     analyzeBtn.disabled = true;
     analyzeBtn.textContent = "Computing...";
@@ -251,7 +299,7 @@ async function requestLiveHeatmapForPoint(lat, lon) {
 }
 
 async function requestLiveHeatmapForCenter() {
-  if (!isLive) return;
+  if (!(await ensureLiveServer())) return;
   const center = map.getCenter();
   await requestLiveHeatmapForPoint(center.lat, center.lng);
 }
