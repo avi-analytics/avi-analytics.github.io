@@ -1,0 +1,23 @@
+{
+  "source": "Open-Meteo daily forecast",
+  "variable": "temperature_2m_max",
+  "observation_date": "2026-04-27",
+  "cell_size_degrees": 2.5,
+  "palette": [
+    "#16334a",
+    "#235b75",
+    "#3d8a86",
+    "#8dbd63",
+    "#e5c75c",
+    "#f3a343",
+    "#dd652c",
+    "#9c1f1f"
+  ],
+  "bounds": [
+    67.9544415,
+    6.5531169,
+    97.3950905,
+    35.6729307
+  ],
+  "layer_path": "data/india-current.geojson"
+}

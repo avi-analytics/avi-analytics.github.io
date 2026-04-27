@@ -1,0 +1,17 @@
+{
+  "source": "Google Earth Engine Landsat 8/9 LST",
+  "scene_date": "2026-04-15",
+  "rolling_window_days": 21,
+  "cell_size_meters": 300,
+  "max_cloud_cover": 25.0,
+  "name": "Kolkata",
+  "state": "West Bengal",
+  "slug": "kolkata",
+  "bounds": [
+    88.233628,
+    22.4520292,
+    88.4610776,
+    22.6188255
+  ],
+  "layer_path": "data/cities/kolkata.geojson"
+}

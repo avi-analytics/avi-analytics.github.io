@@ -1,0 +1,120 @@
+:root {
+  --bg: #f6f2e8;
+  --panel: rgba(255, 252, 245, 0.96);
+  --ink: #1d2733;
+  --muted: #546272;
+  --line: #d8cfbf;
+  --accent: #8d2d1d;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(226, 164, 79, 0.14), transparent 26%),
+    linear-gradient(180deg, #fbf6ea 0%, #f6f2e8 45%, #efe6d5 100%);
+  color: var(--ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+}
+
+.page-shell {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.5rem 0 2.5rem;
+}
+
+.map-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--panel);
+}
+
+.header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.header-controls {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.map-title {
+  font-family: "Avenir Next Condensed", "Arial Narrow", sans-serif;
+  font-size: 1.35rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.map-status {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.reset-button {
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink);
+  padding: 0.55rem 0.95rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  background: rgba(29, 39, 51, 0.06);
+}
+
+.heat-map {
+  min-height: 78vh;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 18px 60px rgba(73, 58, 33, 0.12);
+}
+
+.leaflet-container {
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+}
+
+.heat-tooltip {
+  font-size: 0.9rem;
+}
+
+.action-button {
+  background: var(--accent);
+  color: white;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  padding: 0.55rem 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: opacity 0.2s;
+}
+
+.action-button:hover {
+  opacity: 0.85;
+}
+
+.action-button:disabled {
+  background: var(--muted);
+  border-color: var(--muted);
+  cursor: not-allowed;
+}
+
+#filter-controls input[type="range"] {
+  width: 100px;
+  cursor: pointer;
+}
+
+#temp-val-display {
+  color: var(--accent);
+  font-weight: bold;
+}

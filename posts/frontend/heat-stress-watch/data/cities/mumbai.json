@@ -1,0 +1,7 @@
+{
+  "name": "Mumbai",
+  "state": "Maharashtra",
+  "slug": "mumbai",
+  "status": "missing",
+  "error": "No recent Landsat scenes matched the configured city detail window."
+}

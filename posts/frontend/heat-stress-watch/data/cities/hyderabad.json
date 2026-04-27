@@ -1,0 +1,7 @@
+{
+  "name": "Hyderabad",
+  "state": "Telangana",
+  "slug": "hyderabad",
+  "status": "missing",
+  "error": "No recent Landsat scenes matched the configured city detail window."
+}

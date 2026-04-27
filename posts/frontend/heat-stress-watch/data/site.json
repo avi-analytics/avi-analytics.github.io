@@ -1,0 +1,21 @@
+{
+  "country": "India",
+  "initial_view": {
+    "lat": 22.8,
+    "lon": 79.4,
+    "zoom": 5
+  },
+  "palette": [
+    "#16334a",
+    "#235b75",
+    "#3d8a86",
+    "#8dbd63",
+    "#e5c75c",
+    "#f3a343",
+    "#dd652c",
+    "#9c1f1f"
+  ],
+  "city_index": "data/cities/index.geojson",
+  "national_metadata": "data/india-current.json",
+  "national_layer": "data/india-current.geojson"
+}

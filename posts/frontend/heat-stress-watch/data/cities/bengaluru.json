@@ -1,0 +1,7 @@
+{
+  "name": "Bengaluru",
+  "state": "Karnataka",
+  "slug": "bengaluru",
+  "status": "missing",
+  "error": "No recent Landsat scenes matched the configured city detail window."
+}

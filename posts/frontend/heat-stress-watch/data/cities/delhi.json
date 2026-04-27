@@ -1,0 +1,17 @@
+{
+  "source": "Google Earth Engine Landsat 8/9 LST",
+  "scene_date": "2026-04-23",
+  "rolling_window_days": 21,
+  "cell_size_meters": 300,
+  "max_cloud_cover": 25.0,
+  "name": "Delhi",
+  "state": "Delhi",
+  "slug": "delhi",
+  "bounds": [
+    77.0503708,
+    28.4812209,
+    77.2551392,
+    28.6456842
+  ],
+  "layer_path": "data/cities/delhi.geojson"
+}
