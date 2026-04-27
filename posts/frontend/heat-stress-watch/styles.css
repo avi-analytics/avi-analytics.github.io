@@ -90,6 +90,11 @@ body {
 
 .leaflet-container {
   font-family: "Avenir Next", "Segoe UI", sans-serif;
+  background:
+    linear-gradient(rgba(141, 45, 29, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(141, 45, 29, 0.06) 1px, transparent 1px),
+    radial-gradient(circle at top, rgba(226, 164, 79, 0.22), rgba(246, 242, 232, 0.92) 42%, rgba(239, 230, 213, 1) 100%);
+  background-size: 32px 32px, 32px 32px, auto;
 }
 
 .heat-tooltip {

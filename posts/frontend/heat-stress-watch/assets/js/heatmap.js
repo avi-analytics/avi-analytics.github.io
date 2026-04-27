@@ -7,18 +7,27 @@ const filterControls = document.getElementById("filter-controls");
 const tempMinInput = document.getElementById("temp-min");
 const tempMaxInput = document.getElementById("temp-max");
 const tempValDisplay = document.getElementById("temp-val-display");
+const neutralIndiaBounds = L.latLngBounds([5.5, 66.5], [38.5, 99.5]);
 
 const map = L.map("map", {
   zoomControl: true,
   minZoom: 4,
+  maxBounds: neutralIndiaBounds,
+  maxBoundsViscosity: 0.8,
 });
+
+map.createPane("soi-boundary-casing");
+map.getPane("soi-boundary-casing").style.zIndex = 440;
+map.createPane("soi-outline");
+map.getPane("soi-outline").style.zIndex = 450;
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
   attribution: "&copy; OpenStreetMap contributors",
 }).addTo(map);
 
 let manifest;
-let cityIndexLayer;
+let soiBoundaryCasingLayer;
+let soiOutlineLayer;
 let activeCityLayer;
 let selectedPointMarker;
 let currentGeojson;
@@ -30,16 +39,8 @@ let configuredTargets = [];
 
 map.on("click", (e) => {
   if (!isLive) return;
-  
-  if (selectedPointMarker) {
-    selectedPointMarker.setLatLng(e.latlng);
-  } else {
-    selectedPointMarker = L.marker(e.latlng).addTo(map);
-  }
-  
-  if (clearSelectionBtn) clearSelectionBtn.style.display = "inline-block";
-  setStatus(`Point selected: ${e.latlng.lat.toFixed(4)}, ${e.latlng.lng.toFixed(4)}. Click 'Get Heatmap' to analyze.`);
-  analyzeBtn.onclick = () => requestLiveHeatmapForPoint(e.latlng.lat, e.latlng.lng);
+
+  setSelectedPoint(e.latlng);
 });
 
 function clearSelection() {
@@ -56,7 +57,7 @@ function clearSelection() {
   if (isLive) {
     analyzeBtn.onclick = requestLiveHeatmapForCenter;
   }
-  setStatus("Selection cleared. Choose a city or point and request a heatmap.");
+  setStatus("Selection cleared. Choose a point and request a heatmap.");
 }
 
 clearSelectionBtn?.addEventListener("click", clearSelection);
@@ -65,6 +66,22 @@ function setStatus(message) {
   if (statusNode) {
     statusNode.textContent = message;
   }
+}
+
+function setSelectedPoint(latlng, label = null) {
+  if (selectedPointMarker) {
+    selectedPointMarker.setLatLng(latlng);
+  } else {
+    selectedPointMarker = L.marker(latlng).addTo(map);
+  }
+
+  if (clearSelectionBtn) clearSelectionBtn.style.display = "inline-block";
+  if (label) {
+    setStatus(`${label}. Click 'Get Heatmap' to analyze.`);
+  } else {
+    setStatus(`Point selected: ${latlng.lat.toFixed(4)}, ${latlng.lng.toFixed(4)}. Click 'Get Heatmap' to analyze.`);
+  }
+  analyzeBtn.onclick = () => requestLiveHeatmapForPoint(latlng.lat, latlng.lng);
 }
 
 function toColor(value, min, max, palette) {
@@ -113,6 +130,34 @@ function createLayer(geojson, valueField, palette, tooltipLabel) {
   });
 }
 
+function createBoundaryCasingLayer(geojson) {
+  return L.geoJSON(geojson, {
+    pane: "soi-boundary-casing",
+    interactive: false,
+    style: {
+      color: "#f6f2e8",
+      weight: 6,
+      opacity: 0.98,
+      fillOpacity: 0,
+      lineJoin: "round",
+    },
+  });
+}
+
+function createBoundaryOutlineLayer(geojson) {
+  return L.geoJSON(geojson, {
+    pane: "soi-outline",
+    interactive: false,
+    style: {
+      color: "#762317",
+      weight: 2.25,
+      opacity: 0.95,
+      fillOpacity: 0,
+      lineJoin: "round",
+    },
+  });
+}
+
 function updateFilter() {
   if (!activeCityLayer) return;
   
@@ -129,30 +174,6 @@ function updateFilter() {
 
 tempMinInput?.addEventListener("input", updateFilter);
 tempMaxInput?.addEventListener("input", updateFilter);
-
-function createCityIndexLayer(geojson) {
-  return L.geoJSON(geojson, {
-    style: {
-      color: "#8d2d1d",
-      weight: 1,
-      fillColor: "#8d2d1d",
-      fillOpacity: 0.05,
-    },
-    onEachFeature: (feature, layer) => {
-      layer.bindTooltip(`City: ${feature.properties.name}`);
-      layer.on("click", (e) => {
-        L.DomEvent.stopPropagation(e);
-        map.fitBounds(layer.getBounds());
-        setStatus(`Viewing ${feature.properties.name}. Click 'Get Heatmap' to analyze.`);
-        
-        if (!isLive) {
-           analyzeBtn.textContent = "Load Baseline";
-           analyzeBtn.onclick = () => loadStaticCityLayer(feature);
-        }
-      });
-    },
-  });
-}
 
 async function loadJson(path) {
   const response = await fetch(path);
@@ -240,7 +261,7 @@ async function ensureLiveServer() {
     configuredTargets = await buildLiveTargets();
   }
 
-  setStatus("Checking live backend...");
+  setStatus("Checking live backend. The model can take a couple of minutes to load when first fired up.");
   analyzeBtn.disabled = true;
   analyzeBtn.textContent = "Checking...";
   try {
@@ -258,7 +279,7 @@ async function ensureLiveServer() {
     }
 
     setOfflineState();
-    setStatus("Live backend is unavailable right now. Please try again in a moment.");
+    setStatus("Live backend is unavailable right now or still warming up. The model can take a couple of minutes to load when first fired up.");
     return false;
   } finally {
     analyzeBtn.disabled = false;
@@ -304,20 +325,6 @@ async function requestLiveHeatmapForCenter() {
   await requestLiveHeatmapForPoint(center.lat, center.lng);
 }
 
-async function loadStaticCityLayer(feature) {
-  const name = feature.properties.name;
-  const slug = feature.properties.slug;
-  const metadataPath = `data/cities/${slug}.json`;
-  const layerPath = `data/cities/${slug}.geojson`;
-
-  try {
-    const [metadata, geojson] = await Promise.all([loadJson(metadataPath), loadJson(layerPath)]);
-    renderDetailLayer(geojson, metadata, name);
-  } catch (error) {
-    setStatus(`${name} | baseline unavailable`);
-  }
-}
-
 function renderDetailLayer(geojson, metadata, name) {
   if (activeCityLayer) map.removeLayer(activeCityLayer);
   
@@ -344,10 +351,7 @@ async function resetToIndia() {
   if (tempMinInput) tempMinInput.value = 0;
   if (tempMaxInput) tempMaxInput.value = 60;
   if (tempValDisplay) tempValDisplay.textContent = "0 - 60°C";
-
-  if (cityIndexLayer) {
-    map.fitBounds(cityIndexLayer.getBounds());
-  }
+  map.fitBounds(neutralIndiaBounds, { padding: [24, 24] });
   
   if (isLive) {
       analyzeBtn.textContent = "Get Heatmap";
@@ -356,19 +360,21 @@ async function resetToIndia() {
       analyzeBtn.textContent = "Get Heatmap (Offline)";
       analyzeBtn.onclick = () => alert("Start the live server and visit http://localhost:8080");
   }
-  setStatus("Choose a city or point and request a heatmap.");
+  setStatus("Choose a point and request a heatmap. Official India boundary overlay active. National baseline hidden.");
 }
 
 async function initialize() {
   await checkLiveServer();
   
   manifest = await loadJson("data/site.json");
-  const cityIndexGeojson = await loadJson(manifest.city_index);
+  const soiBoundaryGeojson = await loadJson("data/soi-india-boundary.geojson");
 
-  cityIndexLayer = createCityIndexLayer(cityIndexGeojson);
-
-  map.fitBounds(cityIndexLayer.getBounds());
-  setStatus("Choose a city or point and request a heatmap.");
+  soiBoundaryCasingLayer = createBoundaryCasingLayer(soiBoundaryGeojson);
+  soiOutlineLayer = createBoundaryOutlineLayer(soiBoundaryGeojson);
+  soiBoundaryCasingLayer.addTo(map);
+  soiOutlineLayer.addTo(map);
+  map.fitBounds(neutralIndiaBounds, { padding: [24, 24] });
+  setStatus("Choose a point and request a heatmap. Official India boundary overlay active. National baseline hidden.");
 }
 
 resetButton?.addEventListener("click", () => {
