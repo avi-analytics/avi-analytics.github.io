@@ -53,7 +53,7 @@
     "href": "posts/frontend/heat-stress-watch/index.html",
     "title": "Heat Stress Watch",
     "section": "",
-    "text": "Heat Stress Watch is an interactive map for exploring heat patterns across India. It opens with a national layer and can request finer city-scale heat detail.\nHow to use this page\n\nStart from the India-wide view.\nClick a city or any point on the map.\nUse Get Heatmap to request a live local heat surface.\nAdjust the temperature filter to focus on a narrower range.\nUse Back to India or Clear Selection to reset the view.\n\n\n\n\n\n\n\n\n  \n    About this build\n    \n      Static national data is bundled into the page. Live city detail is fetched from a backend\n      service when available.\n    \n  \n  \n    \n      Heat Stress Watch\n      ● LIVE GEE MODE\n    \n    Initializing...\n    \n      \n        Temp Filter\n        \n        0 - 60°C\n        \n      \n      Back to India\n      Clear Selection\n      Get Heatmap"
+    "text": "Heat Stress Watch is an interactive map for exploring heat patterns across India. The map stays clear on first load and adds a heat layer only after you request it for a selected location.\nHow to use this page\n\nStart from the India-wide view.\nClick a city or any point on the map.\nUse Get Heatmap to request a live local heat surface.\nAdjust the temperature filter to focus on a narrower range.\nUse Back to India or Clear Selection to reset the view.\n\n\n\n\n\n\n\n\n  \n    \n      Heat Stress Watch\n      ● LIVE GEE MODE\n    \n    Initializing...\n    \n      \n        Temp Filter\n        \n        0 - 60°C\n        \n      \n      Back to India\n      Clear Selection\n      Get Heatmap"
   },
   {
     "objectID": "posts/impossibility_theorem/theorem.html",

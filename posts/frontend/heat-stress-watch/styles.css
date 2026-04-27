@@ -26,29 +26,6 @@ body {
   padding: 1.5rem 0 2.5rem;
 }
 
-.project-note {
-  margin: 0 0 1rem;
-  padding: 1rem 1.1rem;
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  background: rgba(255, 252, 245, 0.8);
-}
-
-.project-note-title {
-  margin: 0 0 0.3rem;
-  font-family: "Avenir Next Condensed", "Arial Narrow", sans-serif;
-  font-size: 0.9rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--accent);
-}
-
-.project-note-body {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
 .map-header {
   display: flex;
   justify-content: space-between;
@@ -203,7 +180,6 @@ body {
     padding: 0.75rem 0 1.5rem;
   }
 
-  .project-note,
   .map-header {
     padding: 0.85rem 0.9rem;
     border-radius: 16px;

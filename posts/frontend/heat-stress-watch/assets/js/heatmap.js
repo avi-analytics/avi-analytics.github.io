@@ -18,8 +18,6 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 }).addTo(map);
 
 let manifest;
-let nationalMeta;
-let nationalLayer;
 let cityIndexLayer;
 let activeCityLayer;
 let selectedPointMarker;
@@ -52,15 +50,12 @@ function clearSelection() {
     map.removeLayer(activeCityLayer);
     activeCityLayer = null;
   }
-  if (nationalLayer && !map.hasLayer(nationalLayer)) {
-    nationalLayer.addTo(map);
-  }
   if (clearSelectionBtn) clearSelectionBtn.style.display = "none";
   
   if (isLive) {
     analyzeBtn.onclick = requestLiveHeatmapForCenter;
   }
-  setStatus("Selection cleared.");
+  setStatus("Selection cleared. Choose a city or point and request a heatmap.");
 }
 
 clearSelectionBtn?.addEventListener("click", clearSelection);
@@ -118,7 +113,7 @@ function createLayer(geojson, valueField, palette, tooltipLabel) {
 }
 
 function updateFilter() {
-  if (!activeCityLayer && !nationalLayer) return;
+  if (!activeCityLayer) return;
   
   const tMin = parseFloat(tempMinInput.value);
   const tMax = parseFloat(tempMaxInput.value);
@@ -128,10 +123,6 @@ function updateFilter() {
     map.removeLayer(activeCityLayer);
     activeCityLayer = createLayer(currentGeojson, currentValueField, manifest.palette, "LST");
     activeCityLayer.addTo(map);
-  } else if (nationalLayer) {
-    map.removeLayer(nationalLayer);
-    nationalLayer = createLayer(currentGeojson, currentValueField, manifest.palette, "Temp");
-    nationalLayer.addTo(map);
   }
 }
 
@@ -281,7 +272,6 @@ async function loadStaticCityLayer(feature) {
 
 function renderDetailLayer(geojson, metadata, name) {
   if (activeCityLayer) map.removeLayer(activeCityLayer);
-  if (nationalLayer) map.removeLayer(nationalLayer);
   
   activeCityLayer = createLayer(geojson, "lst_c", manifest.palette, "LST");
   activeCityLayer.addTo(map);
@@ -303,9 +293,6 @@ async function resetToIndia() {
   if (tempMaxInput) tempMaxInput.value = 60;
   if (tempValDisplay) tempValDisplay.textContent = "0 - 60°C";
 
-  if (nationalLayer && !map.hasLayer(nationalLayer)) {
-    nationalLayer.addTo(map);
-  }
   if (cityIndexLayer) {
     map.fitBounds(cityIndexLayer.getBounds());
   }
@@ -317,26 +304,20 @@ async function resetToIndia() {
       analyzeBtn.textContent = "Get Heatmap (Offline)";
       analyzeBtn.onclick = () => alert("Start the live server and visit http://localhost:8080");
   }
-  setStatus(`${nationalMeta.source} | ${nationalMeta.observation_date}`);
+  setStatus("Choose a city or point and request a heatmap.");
 }
 
 async function initialize() {
   await checkLiveServer();
   
   manifest = await loadJson("data/site.json");
-  nationalMeta = await loadJson(manifest.national_metadata);
-  const [nationalGeojson, cityIndexGeojson] = await Promise.all([
-    loadJson(manifest.national_layer),
-    loadJson(manifest.city_index),
-  ]);
+  const cityIndexGeojson = await loadJson(manifest.city_index);
 
-  nationalLayer = createLayer(nationalGeojson, "temperature_c", manifest.palette, "Temp");
   cityIndexLayer = createCityIndexLayer(cityIndexGeojson);
 
-  nationalLayer.addTo(map);
   cityIndexLayer.addTo(map);
   map.fitBounds(cityIndexLayer.getBounds());
-  setStatus(`${nationalMeta.source} | ${nationalMeta.observation_date}`);
+  setStatus("Choose a city or point and request a heatmap.");
 }
 
 resetButton?.addEventListener("click", () => {
