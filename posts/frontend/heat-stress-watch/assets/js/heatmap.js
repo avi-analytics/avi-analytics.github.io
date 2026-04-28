@@ -32,10 +32,23 @@ let activeCityLayer;
 let selectedPointMarker;
 let currentGeojson;
 let currentValueField;
+let currentRange;
 let isLive = false;
 let apiBase = "";
 const liveCheckTimeoutMs = 12000;
 let configuredTargets = [];
+let legendNode;
+
+const legendControl = L.control({ position: "bottomright" });
+
+legendControl.onAdd = () => {
+  legendNode = L.DomUtil.create("div", "heat-legend is-hidden");
+  L.DomEvent.disableClickPropagation(legendNode);
+  L.DomEvent.disableScrollPropagation(legendNode);
+  return legendNode;
+};
+
+legendControl.addTo(map);
 
 map.on("click", (e) => {
   if (!isLive) return;
@@ -52,6 +65,7 @@ function clearSelection() {
     map.removeLayer(activeCityLayer);
     activeCityLayer = null;
   }
+  clearLegend();
   if (clearSelectionBtn) clearSelectionBtn.style.display = "none";
   
   if (isLive) {
@@ -94,21 +108,62 @@ function toColor(value, min, max, palette) {
   return palette[index];
 }
 
-function createLayer(geojson, valueField, palette, tooltipLabel) {
-  currentGeojson = geojson;
-  currentValueField = valueField;
-  
-  const tMin = tempMinInput ? parseFloat(tempMinInput.value) : -100;
-  const tMax = tempMaxInput ? parseFloat(tempMaxInput.value) : 200;
-
+function getValueRange(geojson, valueField) {
   const values = geojson.features
     .map((feature) => feature.properties[valueField])
     .filter((value) => typeof value === "number");
-  
-  if (values.length === 0) return L.geoJSON(geojson);
 
-  const min = Math.min(...values);
-  const max = Math.max(...values);
+  if (values.length === 0) {
+    return null;
+  }
+
+  return {
+    min: Math.min(...values),
+    max: Math.max(...values),
+  };
+}
+
+function formatTemperature(value) {
+  return `${Number(value).toFixed(1)}°C`;
+}
+
+function renderLegend() {
+  if (!legendNode) return;
+
+  if (!currentRange || !manifest?.palette?.length) {
+    legendNode.classList.add("is-hidden");
+    legendNode.innerHTML = "";
+    return;
+  }
+
+  const tMin = tempMinInput ? parseFloat(tempMinInput.value) : currentRange.min;
+  const tMax = tempMaxInput ? parseFloat(tempMaxInput.value) : currentRange.max;
+  const gradient = `linear-gradient(90deg, ${manifest.palette.join(", ")})`;
+
+  legendNode.classList.remove("is-hidden");
+  legendNode.innerHTML = `
+    <div class="heat-legend-bar" style="background: ${gradient};"></div>
+    <div class="heat-legend-scale">
+      <span>${formatTemperature(Math.max(currentRange.min, tMin))}</span>
+      <span>${formatTemperature(Math.min(currentRange.max, tMax))}</span>
+    </div>
+  `;
+}
+
+function clearLegend() {
+  currentRange = null;
+  renderLegend();
+}
+
+function createLayer(geojson, valueField, palette, tooltipLabel, range = null) {
+  currentGeojson = geojson;
+  currentValueField = valueField;
+
+  const tMin = tempMinInput ? parseFloat(tempMinInput.value) : -100;
+  const tMax = tempMaxInput ? parseFloat(tempMaxInput.value) : 200;
+  const effectiveRange = range ?? getValueRange(geojson, valueField);
+
+  if (!effectiveRange) return L.geoJSON(geojson);
 
   return L.geoJSON(geojson, {
     filter: (feature) => {
@@ -118,7 +173,7 @@ function createLayer(geojson, valueField, palette, tooltipLabel) {
     style: (feature) => ({
       stroke: false,
       fillOpacity: 0.45,
-      fillColor: toColor(feature.properties[valueField], min, max, palette),
+      fillColor: toColor(feature.properties[valueField], effectiveRange.min, effectiveRange.max, palette),
     }),
     onEachFeature: (feature, layer) => {
       const value = feature.properties[valueField];
@@ -167,9 +222,11 @@ function updateFilter() {
   
   if (activeCityLayer) {
     map.removeLayer(activeCityLayer);
-    activeCityLayer = createLayer(currentGeojson, currentValueField, manifest.palette, "LST");
+    activeCityLayer = createLayer(currentGeojson, currentValueField, manifest.palette, "LST", currentRange);
     activeCityLayer.addTo(map);
   }
+
+  renderLegend();
 }
 
 tempMinInput?.addEventListener("input", updateFilter);
@@ -327,9 +384,11 @@ async function requestLiveHeatmapForCenter() {
 
 function renderDetailLayer(geojson, metadata, name) {
   if (activeCityLayer) map.removeLayer(activeCityLayer);
-  
-  activeCityLayer = createLayer(geojson, "lst_c", manifest.palette, "LST");
+
+  currentRange = getValueRange(geojson, "lst_c");
+  activeCityLayer = createLayer(geojson, "lst_c", manifest.palette, "LST", currentRange);
   activeCityLayer.addTo(map);
+  renderLegend();
   const bounds = activeCityLayer.getBounds?.();
   if (bounds && bounds.isValid()) {
     map.fitBounds(bounds, { padding: [24, 24], maxZoom: 13 });
@@ -351,6 +410,7 @@ async function resetToIndia() {
   if (tempMinInput) tempMinInput.value = 0;
   if (tempMaxInput) tempMaxInput.value = 60;
   if (tempValDisplay) tempValDisplay.textContent = "0 - 60°C";
+  clearLegend();
   map.fitBounds(neutralIndiaBounds, { padding: [24, 24] });
   
   if (isLive) {

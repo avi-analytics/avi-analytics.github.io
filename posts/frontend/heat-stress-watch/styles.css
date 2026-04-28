@@ -101,6 +101,35 @@ body {
   font-size: 0.9rem;
 }
 
+.heat-legend {
+  min-width: 218px;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid rgba(29, 39, 51, 0.12);
+  border-radius: 16px;
+  background: rgba(255, 252, 245, 0.96);
+  box-shadow: 0 14px 36px rgba(73, 58, 33, 0.18);
+  color: var(--ink);
+}
+
+.heat-legend.is-hidden {
+  display: none;
+}
+
+.heat-legend-bar {
+  height: 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(29, 39, 51, 0.12);
+}
+
+.heat-legend-scale {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-size: 0.78rem;
+  margin-top: 0.45rem;
+  font-weight: 600;
+}
+
 #live-indicator {
   display: none;
   color: #10b981;
@@ -228,5 +257,11 @@ body {
   .heat-map {
     min-height: 62vh;
     border-radius: 18px;
+  }
+
+  .heat-legend {
+    min-width: 0;
+    max-width: min(240px, calc(100vw - 2rem));
+    padding: 0.7rem 0.8rem;
   }
 }
