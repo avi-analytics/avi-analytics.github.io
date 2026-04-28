@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Indian Economy and Polity",
     "section": "",
-    "text": "Heat Stress Watch\n\n\n\n\n\nAn interactive India heat map that combines a national baseline with on-demand Google Earth Engine city analysis.\n\n\n\n\n\nApr 27, 2026\n\n\nAvinash Mani Tripathi\n\n\n\n\n\n\n\n\n\n\n\n\nComputer Aided Proof of Arrow’s Impossibility Theorem\n\n\n\n\n\n\nEconomic Theory\n\n\n\n\n\n\n\n\n\nApr 24, 2026\n\n\nAvinash Mani Tripathi\n\n\n\n\n\n\n\n\n\n\n\n\nHormuz Blockage: A Global Economic Crisis with Unequal Fallout\n\n\n\n\n\n\n\n\n\n\n\nApr 24, 2026\n\n\nAvinash Mani Tripathi\n\n\n\n\n\n\n\n\n\n\n\n\nIndian Lok Sabha Redistribution (850 Total Seats)\n\n\n\n\n\n\nPolitical Economy\n\n\n\n\n\n\n\n\n\nApr 15, 2026\n\n\nAvinash Mani Tripathi\n\n\n\n\n\n\nNo matching items"
+    "text": "Land Surface Temperature Watch\n\n\n\n\n\nAn interactive India heat map showing localized, on-demand Google Earth Engine city analysis.\n\n\n\n\n\nApr 27, 2026\n\n\nAvinash Mani Tripathi\n\n\n\n\n\n\n\n\n\n\n\n\nComputer Aided Proof of Arrow’s Impossibility Theorem\n\n\n\n\n\n\nEconomic Theory\n\n\n\n\n\n\n\n\n\nApr 24, 2026\n\n\nAvinash Mani Tripathi\n\n\n\n\n\n\n\n\n\n\n\n\nHormuz Blockage: A Global Economic Crisis with Unequal Fallout\n\n\n\n\n\n\n\n\n\n\n\nApr 24, 2026\n\n\nAvinash Mani Tripathi\n\n\n\n\n\n\n\n\n\n\n\n\nIndian Lok Sabha Redistribution (850 Total Seats)\n\n\n\n\n\n\nPolitical Economy\n\n\n\n\n\n\n\n\n\nApr 15, 2026\n\n\nAvinash Mani Tripathi\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/hormuz/hormuz_analysis.html",
@@ -51,9 +51,9 @@
   {
     "objectID": "posts/frontend/heat-stress-watch/index.html",
     "href": "posts/frontend/heat-stress-watch/index.html",
-    "title": "Heat Stress Watch",
+    "title": "Land Surface Temperature Watch",
     "section": "",
-    "text": "Heat Stress Watch is an interactive map for exploring heat patterns across India. The map stays clear on first load and adds a heat layer only after you request it for a selected location. The live model can take a couple of minutes to load when it is first fired up, so the first request may be slower.\nHow to use this page\n\nStart from the India-wide view.\nClick any point on the map.\nUse Get Heatmap to request a live local heat surface.\nAdjust the temperature filter to focus on a narrower range.\nUse Back to India or Clear Selection to reset the view.\n\n\n\n\n\n\n\n\n  \n    \n      Heat Stress Watch\n      ● LIVE GEE MODE\n    \n    Initializing...\n    \n      \n        Temp Filter\n        \n        0 - 60°C\n        \n      \n      Back to India\n      Clear Selection\n      Get Heatmap"
+    "text": "Land Surface Temperature Watch is an interactive map for exploring heat patterns across India. The map stays clear on first load and adds a heat layer only after you request it for a selected location. The live model can take a couple of minutes to load when it is first fired up, so the first request may be slower.\nHow to use this page\n\nStart from the India-wide view.\nClick any point on the map.\nUse Get Heatmap to request a live local heat surface.\nAdjust the temperature filter to focus on a narrower range.\nUse Back to India or Clear Selection to reset the view.\n\n\n\n\n\n\n\n\n  \n    \n      Heat Stress Watch\n      ● LIVE GEE MODE\n    \n    Initializing...\n    \n      \n        Temp Filter\n        \n        0 - 60°C\n        \n      \n      Back to India\n      Clear Selection\n      Get Heatmap"
   },
   {
     "objectID": "posts/impossibility_theorem/theorem.html",
