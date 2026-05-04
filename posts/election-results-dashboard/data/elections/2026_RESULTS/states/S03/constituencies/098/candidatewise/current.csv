@@ -1,0 +1,5 @@
+Election_Id,State,State_Code,Constituency_No,Constituency_Key,Constituency_Name,SN,Candidate,Party,EVM_Votes,Postal_Votes,Total_Votes,Vote_Percentage,Timestamp
+2026_RESULTS,Assam,S03,98,S03-098,MAJULI,1,DR. INDRANEEL PEGU,Indian National Congress,38115,0,38115,34.65,2026-05-04 07:52:32
+2026_RESULTS,Assam,S03,98,S03-098,MAJULI,2,BHUBAN GAM,Bharatiya Janata Party,70104,0,70104,63.72,2026-05-04 07:52:32
+2026_RESULTS,Assam,S03,98,S03-098,MAJULI,3,BHAITY RICHONG,Socialist Unity Centre Of India (COMMUNIST),927,0,927,0.84,2026-05-04 07:52:32
+2026_RESULTS,Assam,S03,98,S03-098,MAJULI,4,NOTA,None of the Above,868,0,868,0.79,2026-05-04 07:52:32

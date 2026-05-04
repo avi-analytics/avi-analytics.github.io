@@ -1,0 +1,4 @@
+Election_Id,State,State_Code,Constituency_No,Constituency_Key,Constituency_Name,SN,Candidate,Party,EVM_Votes,Postal_Votes,Total_Votes,Vote_Percentage,Timestamp
+2026_RESULTS,Assam,S03,80,S03-080,JONAI,1,BHUBON PEGU,Bharatiya Janata Party,86079,0,86079,70.02,2026-05-04 08:20:24
+2026_RESULTS,Assam,S03,80,S03-080,JONAI,2,RAJU KUMAR MEDOK,Indian National Congress,35089,0,35089,28.54,2026-05-04 08:20:24
+2026_RESULTS,Assam,S03,80,S03-080,JONAI,3,NOTA,None of the Above,1759,0,1759,1.43,2026-05-04 08:20:24

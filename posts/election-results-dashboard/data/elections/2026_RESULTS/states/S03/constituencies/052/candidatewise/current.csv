@@ -1,0 +1,4 @@
+Election_Id,State,State_Code,Constituency_No,Constituency_Key,Constituency_Name,SN,Candidate,Party,EVM_Votes,Postal_Votes,Total_Votes,Vote_Percentage,Timestamp
+2026_RESULTS,Assam,S03,52,S03-052,JAGIROAD,1,PIJUSH HAZARIKA,Bharatiya Janata Party,103045,0,103045,69.12,2026-05-04 08:20:20
+2026_RESULTS,Assam,S03,52,S03-052,JAGIROAD,2,SRI BUBUL DAS,Indian National Congress,44154,0,44154,29.62,2026-05-04 08:20:20
+2026_RESULTS,Assam,S03,52,S03-052,JAGIROAD,3,NOTA,None of the Above,1884,0,1884,1.26,2026-05-04 08:20:20

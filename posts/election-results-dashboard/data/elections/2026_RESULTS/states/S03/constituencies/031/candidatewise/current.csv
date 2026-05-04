@@ -1,0 +1,4 @@
+Election_Id,State,State_Code,Constituency_No,Constituency_Key,Constituency_Name,SN,Candidate,Party,EVM_Votes,Postal_Votes,Total_Votes,Vote_Percentage,Timestamp
+2026_RESULTS,Assam,S03,31,S03-031,RANGIA,1,PRANJIT CHOUDHURY,Indian National Congress,39375,0,39375,43.67,2026-05-04 08:21:40
+2026_RESULTS,Assam,S03,31,S03-031,RANGIA,2,BHABESH KALITA,Bharatiya Janata Party,48998,0,48998,54.34,2026-05-04 08:21:40
+2026_RESULTS,Assam,S03,31,S03-031,RANGIA,3,NOTA,None of the Above,1795,0,1795,1.99,2026-05-04 08:21:40

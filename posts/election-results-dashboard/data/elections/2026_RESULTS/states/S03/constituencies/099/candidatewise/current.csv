@@ -1,0 +1,4 @@
+Election_Id,State,State_Code,Constituency_No,Constituency_Key,Constituency_Name,SN,Candidate,Party,EVM_Votes,Postal_Votes,Total_Votes,Vote_Percentage,Timestamp
+2026_RESULTS,Assam,S03,99,S03-099,TEOK,1,PALLABI SAIKIA GOGOI,Indian National Congress,31345,0,31345,41.47,2026-05-04 08:22:15
+2026_RESULTS,Assam,S03,99,S03-099,TEOK,2,BIKASH SAIKIA,Asom Gana Parishad,42401,0,42401,56.09,2026-05-04 08:22:15
+2026_RESULTS,Assam,S03,99,S03-099,TEOK,3,NOTA,None of the Above,1845,0,1845,2.44,2026-05-04 08:22:15

@@ -1,0 +1,5 @@
+Election_Id,State,State_Code,Constituency_No,Constituency_Key,Constituency_Name,SN,Candidate,Party,EVM_Votes,Postal_Votes,Total_Votes,Vote_Percentage,Timestamp
+2026_RESULTS,Assam,S03,26,S03-026,BAJALI,1,DHARMESWAR ROY,Asom Gana Parishad,52090,0,52090,61.33,2026-05-04 07:49:59
+2026_RESULTS,Assam,S03,26,S03-026,BAJALI,2,KALYANI KALITA,All India Trinamool Congress,2212,0,2212,2.6,2026-05-04 07:49:59
+2026_RESULTS,Assam,S03,26,S03-026,BAJALI,3,DILIP BARUAH,Assam Jatiya Parishad,28495,0,28495,33.55,2026-05-04 07:49:59
+2026_RESULTS,Assam,S03,26,S03-026,BAJALI,4,NOTA,None of the Above,2137,0,2137,2.52,2026-05-04 07:49:59

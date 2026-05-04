@@ -1,0 +1,5 @@
+Election_Id,State,State_Code,Constituency_No,Constituency_Key,Constituency_Name,SN,Candidate,Party,EVM_Votes,Postal_Votes,Total_Votes,Vote_Percentage,Timestamp
+2026_RESULTS,Assam,S03,103,S03-103,GOLAGHAT,1,AJANTA NEOG,Bharatiya Janata Party,73983,0,73983,61.29,2026-05-04 08:20:05
+2026_RESULTS,Assam,S03,103,S03-103,GOLAGHAT,2,Bitupan Saikia,Indian National Congress,43286,0,43286,35.86,2026-05-04 08:20:05
+2026_RESULTS,Assam,S03,103,S03-103,GOLAGHAT,3,RUBUL BORAH,Independent,1760,0,1760,1.46,2026-05-04 08:20:05
+2026_RESULTS,Assam,S03,103,S03-103,GOLAGHAT,4,NOTA,None of the Above,1686,0,1686,1.4,2026-05-04 08:20:05

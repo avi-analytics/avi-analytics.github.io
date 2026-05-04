@@ -1,0 +1,5 @@
+Election_Id,State,State_Code,Constituency_No,Constituency_Key,Constituency_Name,SN,Candidate,Party,EVM_Votes,Postal_Votes,Total_Votes,Vote_Percentage,Timestamp
+2026_RESULTS,Kerala,S11,17,S11-017,MANANTHAVADY,1,USHA VIJAYAN,Indian National Congress,61658,0,61658,46.24,2026-05-04 08:25:16
+2026_RESULTS,Kerala,S11,17,S11-017,MANANTHAVADY,2,O R KELU,Communist Party of India (Marxist),55200,0,55200,41.4,2026-05-04 08:25:16
+2026_RESULTS,Kerala,S11,17,S11-017,MANANTHAVADY,3,P SHYAMRAJ,Bharatiya Janata Party,15680,0,15680,11.76,2026-05-04 08:25:16
+2026_RESULTS,Kerala,S11,17,S11-017,MANANTHAVADY,4,NOTA,None of the Above,796,0,796,0.6,2026-05-04 08:25:16

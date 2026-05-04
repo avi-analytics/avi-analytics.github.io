@@ -1,0 +1,4 @@
+Election_Id,State,State_Code,Constituency_No,Constituency_Key,Constituency_Name,SN,Candidate,Party,EVM_Votes,Postal_Votes,Total_Votes,Vote_Percentage,Timestamp
+2026_RESULTS,Assam,S03,82,S03-082,DOOMDOOMA,1,DURGA BHUMIJ,Indian National Congress,25269,0,25269,25.69,2026-05-04 08:19:54
+2026_RESULTS,Assam,S03,82,S03-082,DOOMDOOMA,2,RUPESH GOWALA,Bharatiya Janata Party,69175,0,69175,70.32,2026-05-04 08:19:54
+2026_RESULTS,Assam,S03,82,S03-082,DOOMDOOMA,3,NOTA,None of the Above,3921,0,3921,3.99,2026-05-04 08:19:54

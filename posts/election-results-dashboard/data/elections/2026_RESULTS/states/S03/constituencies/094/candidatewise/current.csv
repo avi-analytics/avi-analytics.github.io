@@ -1,0 +1,4 @@
+Election_Id,State,State_Code,Constituency_No,Constituency_Key,Constituency_Name,SN,Candidate,Party,EVM_Votes,Postal_Votes,Total_Votes,Vote_Percentage,Timestamp
+2026_RESULTS,Assam,S03,94,S03-094,MAHMORA,1,JNYANDIP MOHAN,Indian National Congress,38465,0,38465,43.78,2026-05-04 08:20:55
+2026_RESULTS,Assam,S03,94,S03-094,MAHMORA,2,SURUJ DEHINGIA,Bharatiya Janata Party,47389,0,47389,53.94,2026-05-04 08:20:55
+2026_RESULTS,Assam,S03,94,S03-094,MAHMORA,3,NOTA,None of the Above,2006,0,2006,2.28,2026-05-04 08:20:55

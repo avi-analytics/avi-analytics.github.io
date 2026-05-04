@@ -1,0 +1,5 @@
+Election_Id,State,State_Code,Constituency_No,Constituency_Key,Constituency_Name,SN,Candidate,Party,EVM_Votes,Postal_Votes,Total_Votes,Vote_Percentage,Timestamp
+2026_RESULTS,Assam,S03,112,S03-112,AMRI,1,HABBEY TERON,Bharatiya Janata Party,31475,0,31475,64.84,2026-05-04 07:49:57
+2026_RESULTS,Assam,S03,112,S03-112,AMRI,2,BIKRAM HANSE,Independent,15335,0,15335,31.59,2026-05-04 07:49:57
+2026_RESULTS,Assam,S03,112,S03-112,AMRI,3,WILSON TERANG,Independent,593,0,593,1.22,2026-05-04 07:49:57
+2026_RESULTS,Assam,S03,112,S03-112,AMRI,4,NOTA,None of the Above,1139,0,1139,2.35,2026-05-04 07:49:57

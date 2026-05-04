@@ -1,0 +1,4 @@
+Election_Id,State,State_Code,Constituency_No,Constituency_Key,Constituency_Name,SN,Candidate,Party,EVM_Votes,Postal_Votes,Total_Votes,Vote_Percentage,Timestamp
+2026_RESULTS,Assam,S03,114,S03-114,LAKHIPUR,1,M. SANTI KUMAR SINGHA,Indian National Congress,22077,0,22077,19.55,2026-05-04 08:20:53
+2026_RESULTS,Assam,S03,114,S03-114,LAKHIPUR,2,KAUSHIK RAI,Bharatiya Janata Party,88867,0,88867,78.71,2026-05-04 08:20:53
+2026_RESULTS,Assam,S03,114,S03-114,LAKHIPUR,3,NOTA,None of the Above,1961,0,1961,1.74,2026-05-04 08:20:53

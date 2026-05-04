@@ -1,0 +1,5 @@
+Election_Id,State,State_Code,Constituency_No,Constituency_Key,Constituency_Name,SN,Candidate,Party,EVM_Votes,Postal_Votes,Total_Votes,Vote_Percentage,Timestamp
+2026_RESULTS,Kerala,S11,68,S11-068,NATTIKA,1,GEETHAGOPI,Communist Party of India,58121,858,58979,37.44,2026-05-04 08:25:38
+2026_RESULTS,Kerala,S11,68,S11-068,NATTIKA,2,C.C. MUKUNDAN,Bharatiya Janata Party,44727,489,45216,28.7,2026-05-04 08:25:38
+2026_RESULTS,Kerala,S11,68,S11-068,NATTIKA,3,ADV. SUNIL LALOOR,Indian National Congress,51097,789,51886,32.94,2026-05-04 08:25:38
+2026_RESULTS,Kerala,S11,68,S11-068,NATTIKA,4,NOTA,None of the Above,1436,18,1454,0.92,2026-05-04 08:25:38

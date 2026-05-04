@@ -1,0 +1,5 @@
+Election_Id,State,State_Code,Constituency_No,Constituency_Key,Constituency_Name,SN,Candidate,Party,EVM_Votes,Postal_Votes,Total_Votes,Vote_Percentage,Timestamp
+2026_RESULTS,Assam,S03,91,S03-091,TINGKHONG,1,BIPUL GOGOI,Indian National Congress,31388,0,31388,27.3,2026-05-04 08:22:20
+2026_RESULTS,Assam,S03,91,S03-091,TINGKHONG,2,BIMAL BORAH,Bharatiya Janata Party,71352,0,71352,62.06,2026-05-04 08:22:20
+2026_RESULTS,Assam,S03,91,S03-091,TINGKHONG,3,MAHABIR BASKE,Jharkhand Mukti Morcha,10469,0,10469,9.1,2026-05-04 08:22:20
+2026_RESULTS,Assam,S03,91,S03-091,TINGKHONG,4,NOTA,None of the Above,1772,0,1772,1.54,2026-05-04 08:22:20
