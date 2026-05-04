@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/election-results-dashboard/index.html",
       "/posts/frontend/heat-stress-watch/index.html",
       "/posts/impossibility_theorem/theorem.html",
       "/posts/hormuz/hormuz_analysis.html",
