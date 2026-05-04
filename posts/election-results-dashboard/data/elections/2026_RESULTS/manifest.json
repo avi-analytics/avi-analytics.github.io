@@ -14,36 +14,6 @@
     }
   },
   "states": {
-    "S25": {
-      "state_name": "West Bengal",
-      "state_code": "S25",
-      "dashboard_key": "wb",
-      "seat_count": 294,
-      "partywise": {
-        "current_key": "elections/2026_RESULTS/states/S25/partywise/current.csv",
-        "history_key": "elections/2026_RESULTS/states/S25/partywise/history.csv"
-      },
-      "statewide_trends": {
-        "current_key": "elections/2026_RESULTS/states/S25/statewide-trends/current.csv",
-        "history_key": "elections/2026_RESULTS/states/S25/statewide-trends/history.csv"
-      },
-      "constituencies_prefix": "elections/2026_RESULTS/states/S25/constituencies"
-    },
-    "S22": {
-      "state_name": "Tamil Nadu",
-      "state_code": "S22",
-      "dashboard_key": "tn",
-      "seat_count": 234,
-      "partywise": {
-        "current_key": "elections/2026_RESULTS/states/S22/partywise/current.csv",
-        "history_key": "elections/2026_RESULTS/states/S22/partywise/history.csv"
-      },
-      "statewide_trends": {
-        "current_key": "elections/2026_RESULTS/states/S22/statewide-trends/current.csv",
-        "history_key": "elections/2026_RESULTS/states/S22/statewide-trends/history.csv"
-      },
-      "constituencies_prefix": "elections/2026_RESULTS/states/S22/constituencies"
-    },
     "S03": {
       "state_name": "Assam",
       "state_code": "S03",
@@ -73,6 +43,36 @@
         "history_key": "elections/2026_RESULTS/states/S11/statewide-trends/history.csv"
       },
       "constituencies_prefix": "elections/2026_RESULTS/states/S11/constituencies"
+    },
+    "S22": {
+      "state_name": "Tamil Nadu",
+      "state_code": "S22",
+      "dashboard_key": "tn",
+      "seat_count": 234,
+      "partywise": {
+        "current_key": "elections/2026_RESULTS/states/S22/partywise/current.csv",
+        "history_key": "elections/2026_RESULTS/states/S22/partywise/history.csv"
+      },
+      "statewide_trends": {
+        "current_key": "elections/2026_RESULTS/states/S22/statewide-trends/current.csv",
+        "history_key": "elections/2026_RESULTS/states/S22/statewide-trends/history.csv"
+      },
+      "constituencies_prefix": "elections/2026_RESULTS/states/S22/constituencies"
+    },
+    "S25": {
+      "state_name": "West Bengal",
+      "state_code": "S25",
+      "dashboard_key": "wb",
+      "seat_count": 294,
+      "partywise": {
+        "current_key": "elections/2026_RESULTS/states/S25/partywise/current.csv",
+        "history_key": "elections/2026_RESULTS/states/S25/partywise/history.csv"
+      },
+      "statewide_trends": {
+        "current_key": "elections/2026_RESULTS/states/S25/statewide-trends/current.csv",
+        "history_key": "elections/2026_RESULTS/states/S25/statewide-trends/history.csv"
+      },
+      "constituencies_prefix": "elections/2026_RESULTS/states/S25/constituencies"
     },
     "U07": {
       "state_name": "Puducherry",
