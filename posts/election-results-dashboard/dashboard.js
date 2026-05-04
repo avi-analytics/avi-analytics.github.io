@@ -260,29 +260,9 @@
   ];
   const REGIONAL_GROUPS_CONFIG_URL =
     String(window.REGIONAL_GROUPS_CONFIG_URL || "data/config/regional-group-definitions.json").trim();
-  const REGIONAL_GROUP_DEFINITIONS = {
-    seat_type: {
-      label: "Reserved vs General",
-      description:
-        "Reserved seats are inferred from constituency names tagged with reservation markers such as (SC) or (ST).",
-      groups: [
-        {
-          key: "reserved",
-          label: "Reserved",
-          matches(row) {
-            return /\((SC|ST)\)/i.test(row.constituencyName || "");
-          },
-        },
-        {
-          key: "general",
-          label: "General",
-          matches(row) {
-            return !/\((SC|ST)\)/i.test(row.constituencyName || "");
-          },
-        },
-      ],
-    },
-  };
+  const REGIONAL_GROUP_DEFINITIONS = {};
+  const IST_TIMEZONE = "Asia/Kolkata";
+  const IST_OFFSET_MINUTES = 330;
 
   let activeStateKey = "tn";
   let activePath = null;
@@ -293,7 +273,7 @@
   let seatTrendMetric = "total";
   let seatTrendGrouping = "party";
   let activeViewTab = "overview";
-  let activeRegionalGroupingKey = "seat_type";
+  let activeRegionalGroupingKey = "";
   let isRefreshingData = false;
   let regionalGroupDefinitionsLoaded = false;
   let regionalGroupDefinitionsPromise = null;
@@ -1021,15 +1001,39 @@
   function parseTimestamp(value) {
     const text = normalizeText(value);
     if (!text) return null;
+
+    const istMatch = text.match(
+      /^(\d{4})-(\d{2})-(\d{2})(?:[ T](\d{2}):(\d{2})(?::(\d{2}))?)?$/
+    );
+    if (istMatch) {
+      const year = Number(istMatch[1]);
+      const month = Number(istMatch[2]);
+      const day = Number(istMatch[3]);
+      const hour = Number(istMatch[4] || 0);
+      const minute = Number(istMatch[5] || 0);
+      const second = Number(istMatch[6] || 0);
+      const utcMs =
+        Date.UTC(year, month - 1, day, hour, minute, second) - IST_OFFSET_MINUTES * 60 * 1000;
+      const istDate = new Date(utcMs);
+      return Number.isNaN(istDate.getTime()) ? null : istDate;
+    }
+
     const isoLike = text.replace(" ", "T");
     const date = new Date(isoLike);
     return Number.isNaN(date.getTime()) ? null : date;
   }
 
-  function formatTimeTick(timestampMs) {
+  function formatTimeTick(timestampMs, context) {
     if (!Number.isFinite(timestampMs)) return "";
     const date = new Date(timestampMs);
-    return date.toLocaleTimeString("en-IN", {
+    const showDate = context && Number.isFinite(context.xMin) && Number.isFinite(context.xMax)
+      ? new Date(context.xMin).toLocaleDateString("en-IN", { timeZone: IST_TIMEZONE }) !==
+        new Date(context.xMax).toLocaleDateString("en-IN", { timeZone: IST_TIMEZONE })
+      : false;
+    return date.toLocaleString("en-IN", {
+      timeZone: IST_TIMEZONE,
+      day: showDate ? "2-digit" : undefined,
+      month: showDate ? "short" : undefined,
       hour: "2-digit",
       minute: "2-digit",
     });
@@ -1039,6 +1043,7 @@
     const date = value instanceof Date ? value : parseTimestamp(value);
     if (!date) return normalizeText(value) || "-";
     return date.toLocaleString("en-IN", {
+      timeZone: IST_TIMEZONE,
       day: "2-digit",
       month: "short",
       hour: "2-digit",
@@ -1053,6 +1058,10 @@
   function formatPercent(value) {
     const numeric = Number(value || 0);
     return Number.isFinite(numeric) ? `${numeric.toFixed(2)}%` : "-";
+  }
+
+  function hasValidTimestamp(row) {
+    return row && Number.isFinite(row.timestampMs) && row.timestampMs > 0;
   }
 
   function clamp(value, min, max) {
@@ -1313,7 +1322,7 @@
   }
 
   function getRegionalGroupingDefinition() {
-    return REGIONAL_GROUP_DEFINITIONS[activeRegionalGroupingKey] || REGIONAL_GROUP_DEFINITIONS.seat_type;
+    return REGIONAL_GROUP_DEFINITIONS[activeRegionalGroupingKey] || null;
   }
 
   function isRegionalDefinitionAvailableForState(definition, stateKey) {
@@ -2315,7 +2324,7 @@
     xTickValues.forEach((tickValue) => {
       const x = xScale(tickValue);
       svgParts.push(
-        `<text class="chart-tick" x="${x.toFixed(2)}" y="${(height - 14).toFixed(2)}" text-anchor="middle">${formatTimeTick(tickValue)}</text>`
+        `<text class="chart-tick" x="${x.toFixed(2)}" y="${(height - 14).toFixed(2)}" text-anchor="middle">${formatTimeTick(tickValue, { xMin, xMax })}</text>`
       );
     });
 
@@ -2411,15 +2420,16 @@
   }
 
   function buildStateSeatSeries(rows, metric, grouping, stateKey) {
-    if (!rows.length) return [];
+    const validRows = rows.filter(hasValidTimestamp);
+    if (!validRows.length) return [];
 
-    const times = [...new Set(rows.map((row) => row.timestampMs))].sort((a, b) => a - b);
+    const times = [...new Set(validRows.map((row) => row.timestampMs))].sort((a, b) => a - b);
     if (!times.length) return [];
     const latestTime = times[times.length - 1];
-    const latestRows = rows.filter((row) => row.timestampMs === latestTime);
+    const latestRows = validRows.filter((row) => row.timestampMs === latestTime);
 
     if (grouping === "coalition") {
-      const coalitions = getCoalitionDefinitions(stateKey, rows);
+      const coalitions = getCoalitionDefinitions(stateKey, validRows);
       if (!coalitions.length) {
         return [];
       }
@@ -2427,7 +2437,7 @@
       return coalitions
         .map((coalition) => {
           const points = times.map((time) => {
-            const rowsAtTime = rows.filter((row) => {
+            const rowsAtTime = validRows.filter((row) => {
               if (row.timestampMs !== time) return false;
               if (row.partyType === "coalition") {
                 return row.party === coalition.id;
@@ -2464,7 +2474,7 @@
       .map((row, index) => {
         const party = row.party;
         const points = times.map((time) => {
-          const match = rows.find((item) => item.timestampMs === time && item.party === party);
+          const match = validRows.find((item) => item.timestampMs === time && item.party === party);
           return { x: time, y: match ? getSeatMetricValue(match, metric) : 0 };
         });
         return {
@@ -2480,7 +2490,13 @@
   }
 
   function buildCandidateSeries(rows, currentRows) {
-    const referenceRows = currentRows.length
+    const validRows = rows.filter(hasValidTimestamp);
+    const validCurrentRows = currentRows.filter(hasValidTimestamp);
+    const referenceRows = validCurrentRows.length
+      ? validCurrentRows
+      : validRows.length
+        ? validRows.filter((row) => row.timestampMs === Math.max(...validRows.map((item) => item.timestampMs)))
+        : currentRows.length
       ? currentRows
       : rows.filter((row) => row.timestampMs === Math.max(...rows.map((item) => item.timestampMs)));
 
@@ -2488,11 +2504,12 @@
       .slice()
       .sort((a, b) => b.totalVotes - a.totalVotes)
       .slice(0, CANDIDATE_SERIES_LIMIT);
-    const times = [...new Set(rows.map((row) => row.timestampMs))].sort((a, b) => a - b);
+    const times = [...new Set(validRows.map((row) => row.timestampMs))].sort((a, b) => a - b);
+    if (!times.length) return [];
 
     return topCandidates.map((candidateRow, index) => {
       const points = times.map((time) => {
-        const match = rows.find((row) => row.timestampMs === time && row.candidate === candidateRow.candidate);
+        const match = validRows.find((row) => row.timestampMs === time && row.candidate === candidateRow.candidate);
         return { x: time, y: match ? match.totalVotes : 0 };
       });
       return {
@@ -3323,7 +3340,7 @@
     const select = document.getElementById("regional-group-select");
     if (!select) return;
     select.addEventListener("change", () => {
-      activeRegionalGroupingKey = select.value || "seat_type";
+      activeRegionalGroupingKey = select.value || "";
       if (activeViewTab === "regional") {
         loadRegionalTab();
       }
@@ -3334,23 +3351,19 @@
     const select = document.getElementById("regional-group-select");
     if (!select) return;
 
-    const definitions = getAvailableRegionalDefinitions(activeStateKey).sort(([keyA, definitionA], [keyB, definitionB]) => {
-      const priorityA = keyA === "regional" ? -1 : keyA === "seat_type" ? 1 : 0;
-      const priorityB = keyB === "regional" ? -1 : keyB === "seat_type" ? 1 : 0;
-      if (priorityA !== priorityB) {
-        return priorityA - priorityB;
-      }
-      return String(definitionA.label || keyA).localeCompare(String(definitionB.label || keyB));
-    });
+    const definitions = getAvailableRegionalDefinitions(activeStateKey).sort(([, definitionA], [, definitionB]) =>
+      String(definitionA.label || "").localeCompare(String(definitionB.label || ""))
+    );
     const availableKeys = new Set(definitions.map(([key]) => key));
     if (!availableKeys.has(activeRegionalGroupingKey)) {
-      activeRegionalGroupingKey = definitions.length ? definitions[0][0] : "seat_type";
+      activeRegionalGroupingKey = definitions.length ? definitions[0][0] : "";
     }
 
     select.innerHTML = definitions
       .map(([key, definition]) => `<option value="${key}">${definition.label}</option>`)
       .join("");
     select.value = activeRegionalGroupingKey;
+    select.hidden = definitions.length <= 1;
   }
 
   async function ensureStatePartyHistoryLoaded(stateKey) {
@@ -3365,7 +3378,9 @@
     statePartyHistoryPromises[stateCode] = (async () => {
       const url = dataApi.getPartywiseHistoryUrl(stateCode);
       const text = await fetchOptionalCsv(url);
-      const rows = text ? normalizePartyRows(parseCsv(text)).filter((row) => row.stateCode === stateCode) : [];
+      const rows = text
+        ? normalizePartyRows(parseCsv(text)).filter((row) => row.stateCode === stateCode && hasValidTimestamp(row))
+        : [];
       statePartyHistoryCache[stateCode] = rows;
       delete statePartyHistoryPromises[stateCode];
       return rows;
@@ -3389,7 +3404,9 @@
     statewideHistoryPromises[stateCode] = (async () => {
       const url = dataApi.getStatewideTrendsHistoryUrl(stateCode);
       const text = await fetchOptionalCsv(url);
-      const rows = text ? normalizeConstituencyRows(parseCsv(text)).filter((row) => row.stateCode === stateCode) : [];
+      const rows = text
+        ? normalizeConstituencyRows(parseCsv(text)).filter((row) => row.stateCode === stateCode && hasValidTimestamp(row))
+        : [];
       statewideHistoryCache[stateCode] = rows;
       delete statewideHistoryPromises[stateCode];
       return rows;
@@ -3417,7 +3434,9 @@
       ]);
 
       const currentRows = currentText ? normalizeCandidateRows(parseCsv(currentText)) : [];
-      const historyRows = historyText ? normalizeCandidateRows(parseCsv(historyText)) : [];
+      const historyRows = historyText
+        ? normalizeCandidateRows(parseCsv(historyText)).filter((row) => hasValidTimestamp(row))
+        : [];
       const latestHistoryRows = historyRows.length
         ? historyRows.filter((row) => row.timestampMs === Math.max(...historyRows.map((item) => item.timestampMs)))
         : [];
