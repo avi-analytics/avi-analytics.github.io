@@ -666,6 +666,39 @@
     return digits ? digits.join("") : raw;
   }
 
+  function flattenArrays(items, mapper) {
+    return items.reduce((acc, item, index) => {
+      const mapped = mapper ? mapper(item, index) : item;
+      if (Array.isArray(mapped)) {
+        return acc.concat(mapped);
+      }
+      acc.push(mapped);
+      return acc;
+    }, []);
+  }
+
+  function getSearchParamValue(name) {
+    if (typeof URLSearchParams === "function") {
+      const params = new URLSearchParams(window.location.search);
+      return params.get(name);
+    }
+
+    const query = String(window.location.search || "").replace(/^\?/, "");
+    if (!query) return null;
+
+    const pairs = query.split("&");
+    for (let index = 0; index < pairs.length; index += 1) {
+      const pair = pairs[index];
+      if (!pair) continue;
+      const parts = pair.split("=");
+      const key = decodeURIComponent(parts[0] || "");
+      if (key !== name) continue;
+      return decodeURIComponent((parts[1] || "").replace(/\+/g, " "));
+    }
+
+    return null;
+  }
+
   function padConstituencyNo(value) {
     const digits = normalizeNumberString(value);
     return digits ? digits.padStart(3, "0") : "";
@@ -1434,9 +1467,15 @@
 
       regionalGroupDefinitionsLoaded = true;
       return REGIONAL_GROUP_DEFINITIONS;
-    })().finally(() => {
-      regionalGroupDefinitionsPromise = null;
-    });
+    })()
+      .then((result) => {
+        regionalGroupDefinitionsPromise = null;
+        return result;
+      })
+      .catch((error) => {
+        regionalGroupDefinitionsPromise = null;
+        throw error;
+      });
 
     return regionalGroupDefinitionsPromise;
   }
@@ -1547,8 +1586,7 @@
   }
 
   function getDatasetMode() {
-    const params = new URLSearchParams(window.location.search);
-    const mode = params.get(FIXTURE_PARAM);
+    const mode = getSearchParamValue(FIXTURE_PARAM);
     if (mode === "fixture") return "fixture";
     return "live";
   }
@@ -2234,8 +2272,11 @@
     const padding = { top: 18, right: 22, bottom: 44, left: 52 };
     const plotWidth = width - padding.left - padding.right;
     const plotHeight = height - padding.top - padding.bottom;
-    const xValues = [...new Set(series.flatMap((entry) => entry.points.map((point) => point.x)))].sort((a, b) => a - b);
-    const yMax = Math.max(1, options.yMax || Math.max(...series.flatMap((entry) => entry.points.map((point) => point.y))));
+    const xValues = [...new Set(flattenArrays(series, (entry) => entry.points.map((point) => point.x)))].sort(
+      (a, b) => a - b
+    );
+    const yValues = flattenArrays(series, (entry) => entry.points.map((point) => point.y));
+    const yMax = Math.max(1, options.yMax || Math.max.apply(null, yValues));
     const xMin = xValues[0];
     const xMax = xValues[xValues.length - 1];
 
@@ -2511,7 +2552,7 @@
       summaryByState[row.stateKey] = stateSummary;
     });
 
-    return Object.values(summaryByState).flatMap((stateSummary) => Object.values(stateSummary));
+    return flattenArrays(Object.values(summaryByState), (stateSummary) => Object.values(stateSummary));
   }
 
   function renderPartyTable() {
