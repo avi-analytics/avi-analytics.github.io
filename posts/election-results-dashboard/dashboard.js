@@ -163,6 +163,12 @@
     "party:CPI(M)": ["CPIM", "CPM"],
     "party:INC": ["Congress"],
   };
+  const PARTY_COLOR_OVERRIDES = {
+    TVK: "#f97316",
+    IND: "#334155",
+    Independent: "#334155",
+    Independents: "#334155",
+  };
   const EXTRA_COALITION_ALIASES = {
     "coalition:INDIA": ["I.N.D.I.A."],
   };
@@ -262,7 +268,6 @@
     String(window.REGIONAL_GROUPS_CONFIG_URL || "data/config/regional-group-definitions.json").trim();
   const REGIONAL_GROUP_DEFINITIONS = {};
   const IST_TIMEZONE = "Asia/Kolkata";
-  const IST_OFFSET_MINUTES = 330;
 
   let activeStateKey = "tn";
   let activePath = null;
@@ -573,7 +578,7 @@
         type: known.type,
         shortLabel: known.shortLabel,
         fullLabel: known.fullLabel,
-        color: known.color,
+        color: known.color || PARTY_COLOR_OVERRIDES[canonicalId] || PARTY_COLOR_OVERRIDES[known.shortLabel] || "",
       };
     }
     const fallback = normalizeText(value) || canonicalId;
@@ -582,12 +587,24 @@
       type: "party",
       shortLabel: fallback,
       fullLabel: fallback,
-      color: "",
+      color: PARTY_COLOR_OVERRIDES[canonicalId] || PARTY_COLOR_OVERRIDES[fallback] || "",
     };
   }
 
+  function isEffectivelyWhite(hex) {
+    const normalized = String(hex || "").trim().toLowerCase();
+    return !normalized || normalized === "#fff" || normalized === "#ffffff" || normalized === "white";
+  }
+
   function getPartyColor(value, fallback) {
-    return getPartyStyle(value).color || fallback || "#0d3b66";
+    const partyStyle = getPartyStyle(value);
+    if (partyStyle.color && !isEffectivelyWhite(partyStyle.color)) {
+      return partyStyle.color;
+    }
+    if (fallback && !isEffectivelyWhite(fallback)) {
+      return fallback;
+    }
+    return "#0d3b66";
   }
 
   function getPartyDisplayLabel(value) {
@@ -1002,20 +1019,18 @@
     const text = normalizeText(value);
     if (!text) return null;
 
-    const istMatch = text.match(
+    const naiveMatch = text.match(
       /^(\d{4})-(\d{2})-(\d{2})(?:[ T](\d{2}):(\d{2})(?::(\d{2}))?)?$/
     );
-    if (istMatch) {
-      const year = Number(istMatch[1]);
-      const month = Number(istMatch[2]);
-      const day = Number(istMatch[3]);
-      const hour = Number(istMatch[4] || 0);
-      const minute = Number(istMatch[5] || 0);
-      const second = Number(istMatch[6] || 0);
-      const utcMs =
-        Date.UTC(year, month - 1, day, hour, minute, second) - IST_OFFSET_MINUTES * 60 * 1000;
-      const istDate = new Date(utcMs);
-      return Number.isNaN(istDate.getTime()) ? null : istDate;
+    if (naiveMatch) {
+      const year = Number(naiveMatch[1]);
+      const month = Number(naiveMatch[2]);
+      const day = Number(naiveMatch[3]);
+      const hour = Number(naiveMatch[4] || 0);
+      const minute = Number(naiveMatch[5] || 0);
+      const second = Number(naiveMatch[6] || 0);
+      const utcDate = new Date(Date.UTC(year, month - 1, day, hour, minute, second));
+      return Number.isNaN(utcDate.getTime()) ? null : utcDate;
     }
 
     const isoLike = text.replace(" ", "T");
@@ -1062,6 +1077,51 @@
 
   function hasValidTimestamp(row) {
     return row && Number.isFinite(row.timestampMs) && row.timestampMs > 0;
+  }
+
+  function filterTimelineOutliers(times) {
+    if (!Array.isArray(times) || times.length < 4) {
+      return Array.isArray(times) ? times.slice() : [];
+    }
+
+    let filtered = times.slice();
+    let changed = true;
+    while (changed && filtered.length >= 4) {
+      changed = false;
+      const gaps = [];
+      for (let index = 1; index < filtered.length; index += 1) {
+        gaps.push(filtered[index] - filtered[index - 1]);
+      }
+      const positiveGaps = gaps.filter((gap) => Number.isFinite(gap) && gap > 0).sort((a, b) => a - b);
+      if (!positiveGaps.length) {
+        return filtered;
+      }
+      const medianGap = positiveGaps[Math.floor(positiveGaps.length / 2)];
+      const threshold = Math.max(medianGap * 6, 20 * 60 * 1000);
+
+      if (gaps[0] > threshold && (gaps[1] || 0) <= threshold) {
+        filtered = filtered.slice(1);
+        changed = true;
+        continue;
+      }
+      if (gaps[gaps.length - 1] > threshold && (gaps[gaps.length - 2] || 0) <= threshold) {
+        filtered = filtered.slice(0, -1);
+        changed = true;
+        continue;
+      }
+
+      for (let index = 1; index < filtered.length - 1; index += 1) {
+        const leftGap = filtered[index] - filtered[index - 1];
+        const rightGap = filtered[index + 1] - filtered[index];
+        if (leftGap > threshold && rightGap > threshold) {
+          filtered = filtered.filter((_, candidateIndex) => candidateIndex !== index);
+          changed = true;
+          break;
+        }
+      }
+    }
+
+    return filtered;
   }
 
   function clamp(value, min, max) {
@@ -1825,7 +1885,9 @@
     if (partyTitle) {
       if (activeViewTab === "regional") {
         const groupingDefinition = getRegionalGroupingDefinition();
-        partyTitle.textContent = `${config.name}: ${groupingDefinition.label}`;
+        partyTitle.textContent = groupingDefinition
+          ? `${config.name}: ${groupingDefinition.label}`
+          : `${config.name}: regional analysis`;
       } else {
         partyTitle.textContent = `${config.name}: current party standing`;
       }
@@ -2423,7 +2485,9 @@
     const validRows = rows.filter(hasValidTimestamp);
     if (!validRows.length) return [];
 
-    const times = [...new Set(validRows.map((row) => row.timestampMs))].sort((a, b) => a - b);
+    const times = filterTimelineOutliers(
+      [...new Set(validRows.map((row) => row.timestampMs))].sort((a, b) => a - b)
+    );
     if (!times.length) return [];
     const latestTime = times[times.length - 1];
     const latestRows = validRows.filter((row) => row.timestampMs === latestTime);
@@ -2492,19 +2556,18 @@
   function buildCandidateSeries(rows, currentRows) {
     const validRows = rows.filter(hasValidTimestamp);
     const validCurrentRows = currentRows.filter(hasValidTimestamp);
-    const referenceRows = validCurrentRows.length
-      ? validCurrentRows
-      : validRows.length
-        ? validRows.filter((row) => row.timestampMs === Math.max(...validRows.map((item) => item.timestampMs)))
-        : currentRows.length
-      ? currentRows
-      : rows.filter((row) => row.timestampMs === Math.max(...rows.map((item) => item.timestampMs)));
+    const latestValidRows = validRows.length
+      ? validRows.filter((row) => row.timestampMs === Math.max(...validRows.map((item) => item.timestampMs)))
+      : [];
+    const referenceRows = validCurrentRows.length ? validCurrentRows : latestValidRows.length ? latestValidRows : currentRows;
 
     const topCandidates = referenceRows
       .slice()
       .sort((a, b) => b.totalVotes - a.totalVotes)
       .slice(0, CANDIDATE_SERIES_LIMIT);
-    const times = [...new Set(validRows.map((row) => row.timestampMs))].sort((a, b) => a - b);
+    const times = filterTimelineOutliers(
+      [...new Set(validRows.map((row) => row.timestampMs))].sort((a, b) => a - b)
+    );
     if (!times.length) return [];
 
     return topCandidates.map((candidateRow, index) => {
@@ -2658,7 +2721,14 @@
 
     const config = getStateConfig(activeStateKey);
     if (title) {
-      title.textContent = `${config.name}: ${groupingDefinition.label}`;
+      title.textContent = groupingDefinition
+        ? `${config.name}: ${groupingDefinition.label}`
+        : `${config.name}: regional analysis`;
+    }
+
+    if (!groupingDefinition) {
+      container.innerHTML = '<div class="chart-empty">No region grouping is configured for this state.</div>';
+      return;
     }
 
     if (!groupMetrics || !groupMetrics.length) {
@@ -3100,6 +3170,9 @@
   }
 
   function getRegionalGroupCounts(rows, groupingDefinition) {
+    if (!groupingDefinition || !Array.isArray(groupingDefinition.groups) || !groupingDefinition.groups.length) {
+      return [];
+    }
     return getRegionalGroupBuckets(rows, groupingDefinition).map((bucket) => {
       const latestPartyCounts = bucket.rows.reduce((acc, row) => {
         const party = normalizeText(row.leadingParty);
@@ -3350,6 +3423,7 @@
   function refreshRegionalGroupSelectOptions() {
     const select = document.getElementById("regional-group-select");
     if (!select) return;
+    const filter = select.closest(".regional-filter");
 
     const definitions = getAvailableRegionalDefinitions(activeStateKey).sort(([, definitionA], [, definitionB]) =>
       String(definitionA.label || "").localeCompare(String(definitionB.label || ""))
@@ -3363,7 +3437,11 @@
       .map(([key, definition]) => `<option value="${key}">${definition.label}</option>`)
       .join("");
     select.value = activeRegionalGroupingKey;
-    select.hidden = definitions.length <= 1;
+    if (filter) {
+      filter.hidden = definitions.length <= 1;
+    } else {
+      select.hidden = definitions.length <= 1;
+    }
   }
 
   async function ensureStatePartyHistoryLoaded(stateKey) {
@@ -3610,7 +3688,6 @@
     window.ELECTION_DATA_API = dataApi;
 
     const constituencyUrl = dataApi.summary.statewideTrends.current;
-    const partyUrl = dataApi.summary.partywise.current;
 
     if (!constituencyUrl) {
       setDataStatus("Data layout manifest is missing the statewide current summary endpoint.", "error");
@@ -3620,45 +3697,8 @@
     try {
       const constituencyCsv = await fetchCsv(constituencyUrl);
       constituencyRows = normalizeConstituencyRows(parseCsv(constituencyCsv));
-      partyRows = [];
-
-      if (!partyUrl) {
-        setDataStatus(
-          "Party summary feed is not configured. Current party standing is being derived from constituency leads.",
-          "warn"
-        );
-        return;
-      }
-
-      setDataStatus(
-        "Loaded constituency data. Current party standing is being derived from constituency leads until the party summary feed is available.",
-        "warn"
-      );
-
-      fetchOptionalCsv(partyUrl)
-        .then((partyCsv) => {
-          if (!partyCsv) {
-            setDataStatus(
-              "Party summary feed is not available yet. Current party standing is being derived from constituency leads.",
-              "warn"
-            );
-            return;
-          }
-          if (partyCsv) {
-            partyRows = normalizePartyRows(parseCsv(partyCsv));
-            setDataStatus("", "success");
-            if (activeViewTab !== "regional") {
-              renderPartyTable();
-            }
-          }
-        })
-        .catch((partyError) => {
-          console.warn("Party summary feed unavailable; falling back to constituency-derived standing.", partyError);
-          setDataStatus(
-            "Party summary feed could not be loaded. Current party standing is being derived from constituency leads.",
-            "warn"
-          );
-        });
+      partyRows = buildDerivedPartyRows(constituencyRows);
+      setDataStatus("Loaded constituency data. Current party standing is derived from live constituency leads.", "success");
     } catch (error) {
       console.error(error);
       setDataStatus(`Data load failed: ${error.message}`, "error");
