@@ -164,7 +164,7 @@
     "party:INC": ["Congress"],
   };
   const PARTY_COLOR_OVERRIDES = {
-    TVK: "#f97316",
+    TVK: "#e11d48",
     IND: "#334155",
     Independent: "#334155",
     Independents: "#334155",
@@ -1122,6 +1122,36 @@
     }
 
     return filtered;
+  }
+
+  function filterIncompletePartyHistoryRows(rows) {
+    if (!Array.isArray(rows) || rows.length < 2) {
+      return Array.isArray(rows) ? rows : [];
+    }
+
+    const countsByTimestamp = rows.reduce((acc, row) => {
+      const timestampMs = row && row.timestampMs;
+      if (!Number.isFinite(timestampMs) || timestampMs <= 0) {
+        return acc;
+      }
+      acc[timestampMs] = (acc[timestampMs] || 0) + 1;
+      return acc;
+    }, {});
+
+    const counts = Object.values(countsByTimestamp);
+    if (!counts.length) {
+      return rows;
+    }
+
+    const maxCount = Math.max(...counts);
+    const minimumCompleteCount = Math.max(5, Math.floor(maxCount * 0.75));
+    return rows.filter((row) => {
+      const timestampMs = row && row.timestampMs;
+      if (!Number.isFinite(timestampMs) || timestampMs <= 0) {
+        return false;
+      }
+      return (countsByTimestamp[timestampMs] || 0) >= minimumCompleteCount;
+    });
   }
 
   function clamp(value, min, max) {
@@ -3456,9 +3486,10 @@
     statePartyHistoryPromises[stateCode] = (async () => {
       const url = dataApi.getPartywiseHistoryUrl(stateCode);
       const text = await fetchOptionalCsv(url);
-      const rows = text
+      const rawRows = text
         ? normalizePartyRows(parseCsv(text)).filter((row) => row.stateCode === stateCode && hasValidTimestamp(row))
         : [];
+      const rows = filterIncompletePartyHistoryRows(rawRows);
       statePartyHistoryCache[stateCode] = rows;
       delete statePartyHistoryPromises[stateCode];
       return rows;
