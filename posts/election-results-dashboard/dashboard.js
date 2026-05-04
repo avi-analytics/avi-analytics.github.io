@@ -186,6 +186,7 @@
       seatCount: 234,
       color: "#c2410c",
       mapDataKey: "TN_MAP_DATA",
+      mapScriptUrl: "data/geo/tamil-nadu-ac.js",
     },
     wb: {
       key: "wb",
@@ -194,6 +195,7 @@
       seatCount: 294,
       color: "#1d4ed8",
       mapDataKey: "WB_MAP_DATA",
+      mapScriptUrl: "data/geo/west-bengal-ac.js",
     },
     as: {
       key: "as",
@@ -202,6 +204,7 @@
       seatCount: 126,
       color: "#0f766e",
       mapDataKey: "AS_MAP_DATA",
+      mapScriptUrl: "data/geo/assam-ac.js",
     },
     kl: {
       key: "kl",
@@ -210,6 +213,7 @@
       seatCount: 140,
       color: "#1e3a8a",
       mapDataKey: "KL_MAP_DATA",
+      mapScriptUrl: "data/geo/kerala-ac.js",
     },
     py: {
       key: "py",
@@ -218,6 +222,7 @@
       seatCount: 30,
       color: "#6d28d9",
       mapDataKey: "PY_MAP_DATA",
+      mapScriptUrl: "data/geo/puducherry-ac.js",
     },
   };
 
@@ -244,6 +249,7 @@
   const SEAT_TREND_SERIES_LIMIT = 6;
   const CANDIDATE_SERIES_LIMIT = 5;
   const REGIONAL_GROUP_SERIES_LIMIT = 6;
+  const mapDataPromises = {};
   const REGIONAL_GROUP_COLORS = [
     { fill: "#fef3c7", stroke: "#d97706" },
     { fill: "#dbeafe", stroke: "#2563eb" },
@@ -1624,6 +1630,57 @@
     statusEl.style.display = message ? "block" : "none";
   }
 
+  function setMapLoadingState(stateKey) {
+    const mapRoot = document.getElementById("map-root");
+    if (!mapRoot) return;
+    mapRoot.innerHTML = `<div class="chart-empty">Loading ${getStateConfig(stateKey).name} map boundaries...</div>`;
+  }
+
+  function ensureMapDataLoaded(stateKey) {
+    const config = getStateConfig(stateKey);
+    if (window[config.mapDataKey]) {
+      return Promise.resolve(window[config.mapDataKey]);
+    }
+    if (mapDataPromises[stateKey]) {
+      return mapDataPromises[stateKey];
+    }
+
+    mapDataPromises[stateKey] = new Promise((resolve, reject) => {
+      const existing = document.querySelector(`script[data-map-state="${stateKey}"]`);
+      const script = existing || document.createElement("script");
+
+      const finalize = () => {
+        const mapData = window[config.mapDataKey];
+        if (mapData) {
+          resolve(mapData);
+          return;
+        }
+        reject(new Error(`Map data for ${config.name} loaded without exposing ${config.mapDataKey}.`));
+      };
+
+      script.addEventListener("load", finalize, { once: true });
+      script.addEventListener(
+        "error",
+        () => {
+          reject(new Error(`Failed to load map boundaries for ${config.name}.`));
+        },
+        { once: true }
+      );
+
+      if (!existing) {
+        script.src = config.mapScriptUrl;
+        script.async = true;
+        script.dataset.mapState = stateKey;
+        document.body.appendChild(script);
+      }
+    }).catch((error) => {
+      delete mapDataPromises[stateKey];
+      throw error;
+    });
+
+    return mapDataPromises[stateKey];
+  }
+
   function getFeatureMapData(stateKey) {
     const config = getStateConfig(stateKey);
     return window[config.mapDataKey];
@@ -1998,7 +2055,8 @@
 
     const mapData = getFeatureMapData(activeStateKey);
     if (!mapData) {
-      mapRoot.innerHTML = `<div class="error-msg">Map data for ${getStateConfig(activeStateKey).name} not found.</div>`;
+      updateStateHeader();
+      setMapLoadingState(activeStateKey);
       return;
     }
 
@@ -3462,13 +3520,26 @@
     if (activeViewTab === "analytics") {
       loadAnalyticsTab();
     }
+
+    ensureMapDataLoaded(stateKey)
+      .then(() => {
+        if (activeStateKey !== stateKey) return;
+        renderMap();
+        restoreSelectedConstituencySelection();
+      })
+      .catch((error) => {
+        console.error("Map load failed:", error);
+        if (activeStateKey !== stateKey) return;
+        const mapRoot = document.getElementById("map-root");
+        if (mapRoot) {
+          mapRoot.innerHTML = `<div class="error-msg">Map load failed: ${error.message}</div>`;
+        }
+      });
   }
 
   async function loadData() {
-    const mapStatus = `Maps: ${["TN_MAP_DATA", "WB_MAP_DATA", "AS_MAP_DATA", "KL_MAP_DATA", "PY_MAP_DATA"]
-      .map((key) => (window[key] ? "OK" : "ERR"))
-      .join("/")}`;
-    setDataStatus(`Checking data... (${mapStatus})`, "neutral");
+    const activeMapReady = Boolean(getFeatureMapData(activeStateKey));
+    setDataStatus(`Checking data... (Boundary ${activeMapReady ? "ready" : "loading"})`, "neutral");
 
     dataApi = await loadDataApi();
     if (!dataApi) {
