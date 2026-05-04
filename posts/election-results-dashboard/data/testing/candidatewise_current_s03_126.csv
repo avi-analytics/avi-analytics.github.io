@@ -1,0 +1,4 @@
+Election_Id,State,State_Code,Constituency_No,Constituency_Key,Constituency_Name,SN,Candidate,Party,EVM_Votes,Postal_Votes,Total_Votes,Vote_Percentage,Timestamp
+2026_RESULTS,Assam,S03,126,S03-126,Sadiya,1,R. Sample,BJP,36110,155,36265,49.07,2026-04-28 09:30:00
+2026_RESULTS,Assam,S03,126,S03-126,Sadiya,2,L. Rival,INC,32960,185,33145,44.81,2026-04-28 09:30:00
+2026_RESULTS,Assam,S03,126,S03-126,Sadiya,3,T. Third,AGP,3860,12,3872,5.24,2026-04-28 09:30:00

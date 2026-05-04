@@ -1,0 +1,6 @@
+State,State_Code,Constituency_No,Constituency_Key,Constituency_Name,District,Leading_Party,Leading_Candidate,Margin,Status,Timestamp
+Tamil Nadu,S22,2,S22-002,Ponneri (SC),THIRUVALLUR,DMK,S. Sample,18234,Leading,2026-04-28 09:30:00
+West Bengal,S25,1,S25-001,MEKLIGANJ (SC),KOCH BIHAR,AITC,M. Sample,5421,Leading,2026-04-28 09:30:00
+Assam,S03,126,S03-126,Sadiya,TINSUKIA,BJP,R. Sample,3120,Leading,2026-04-28 09:30:00
+Kerala,S11,1,S11-001,Manjeshwaram,KASARAGOD,INC,K. Sample,1840,Leading,2026-04-28 09:30:00
+Puducherry,U07,1,U07-001,Mannadipet,PUDUCHERRY,INC,P. Sample,910,Leading,2026-04-28 09:30:00

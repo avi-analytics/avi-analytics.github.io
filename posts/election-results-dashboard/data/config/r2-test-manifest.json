@@ -1,0 +1,128 @@
+{
+  "schema_version": "2026-05-03",
+  "generated_at": "2026-05-03 20:14:53",
+  "election_id": "2026_RESULTS_TEST",
+  "root_prefix": "elections/2026_RESULTS_TEST",
+  "summary": {
+    "partywise": {
+      "current_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/summary/partywise/current.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144454Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=294251c59a0982e698dae7cfb3b2a6ca15658be0b1c57218fe3ff0210bbf3455",
+      "history_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/summary/partywise/history.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144455Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=addbd09bb262127f1d0437e186228fb4fa10571917587d6a21cbbcdb099c880e"
+    },
+    "statewide_trends": {
+      "current_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/summary/statewide-trends/current.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144456Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5e94fa6dac217ea078e332ea2593f38de88e72f0a5cda4d9af73d705ace6b4fd",
+      "history_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/summary/statewide-trends/history.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144456Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f88b54a2390a019e06ce7403b95d2d3dcf872ed15c3090a98c64324ca099ba60"
+    }
+  },
+  "states": {
+    "S22": {
+      "state_name": "Tamil Nadu",
+      "state_code": "S22",
+      "dashboard_key": "tn",
+      "seat_count": 234,
+      "partywise": {
+        "current_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/S22/partywise/current.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144458Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2bf805c9040e5f30e90074d3a2092928db393be56bcdf82fbcc0c54443080cc1",
+        "history_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/S22/partywise/history.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144459Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b5ddb921acb372ea450d1ab72e956f3fb1079f6b33bcef568896e9e0c738aee5"
+      },
+      "statewide_trends": {
+        "current_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/S22/statewide-trends/current.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144500Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=99449375b6b100de4fa216804bb5413f58515d74a74a0f66c81d3adcdeffafd6",
+        "history_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/S22/statewide-trends/history.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144501Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fcb692df1c67ca086d991a931585b97247847c927d9385a5ac82aa227f15ae26"
+      },
+      "constituencies_prefix": "elections/2026_RESULTS_TEST/states/S22/constituencies"
+    },
+    "S25": {
+      "state_name": "West Bengal",
+      "state_code": "S25",
+      "dashboard_key": "wb",
+      "seat_count": 294,
+      "partywise": {
+        "current_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/S25/partywise/current.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144501Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=31459d0a88723b7e2083ca1f6fc36670f74b6b101c74491dd21ef582076f8053",
+        "history_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/S25/partywise/history.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144502Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=35d63edf6d568f0aa13c3cc4bec184c934c2047338209ad066770f6824acdf0b"
+      },
+      "statewide_trends": {
+        "current_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/S25/statewide-trends/current.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144502Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d0d6da2181f7a88d08def6742b6bb8052329343ea4aa4a6b7abb022a8c8bdeac",
+        "history_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/S25/statewide-trends/history.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144503Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e3548729bd7479f8d8ddbcf47c9eadddfdbc263fbdfd5e5f0439e0caf6face6e"
+      },
+      "constituencies_prefix": "elections/2026_RESULTS_TEST/states/S25/constituencies"
+    },
+    "S03": {
+      "state_name": "Assam",
+      "state_code": "S03",
+      "dashboard_key": "as",
+      "seat_count": 126,
+      "partywise": {
+        "current_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/S03/partywise/current.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144504Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4de58e62d28fb8b0395ddf19a07260a345854ab361c722db57579b4c9ae530b3",
+        "history_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/S03/partywise/history.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144505Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=840d760b0648bdcac0cf500bbb1addf126c5273529b33945cdd4bc6ad500f397"
+      },
+      "statewide_trends": {
+        "current_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/S03/statewide-trends/current.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144505Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=72ffc867638f3b7b8b3dcca672e70f220eba8ebba929bb233f7bca0b50821add",
+        "history_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/S03/statewide-trends/history.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144506Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=255b7e9e0760ff10555cd87b459ff9672216a25bc89bbe2f9466818d43fc96f4"
+      },
+      "constituencies_prefix": "elections/2026_RESULTS_TEST/states/S03/constituencies"
+    },
+    "S11": {
+      "state_name": "Kerala",
+      "state_code": "S11",
+      "dashboard_key": "kl",
+      "seat_count": 140,
+      "partywise": {
+        "current_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/S11/partywise/current.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144507Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=21e693e84bd4ff2deda405f0ae76ba6c13bf5055cac37d439e90ba174065eaf6",
+        "history_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/S11/partywise/history.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144507Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=eeb74525ac12d6b5aff5a02f51492040c1a29f1568f6a0bec793d932537307ec"
+      },
+      "statewide_trends": {
+        "current_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/S11/statewide-trends/current.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144508Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=22391e8639a145d9689757c018a3342038c179e22346efe3347e06dda4bff38f",
+        "history_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/S11/statewide-trends/history.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144509Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b2ef87fa173ad84104352d1dd7f6b6e91c9cbd4b5081588ffe4627d311e622de"
+      },
+      "constituencies_prefix": "elections/2026_RESULTS_TEST/states/S11/constituencies"
+    },
+    "U07": {
+      "state_name": "Puducherry",
+      "state_code": "U07",
+      "dashboard_key": "py",
+      "seat_count": 30,
+      "partywise": {
+        "current_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/U07/partywise/current.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144509Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=002e4c858c486a83d941984771573f2bacd19592030ed91a54c0a39f52bedb7c",
+        "history_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/U07/partywise/history.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144510Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=10cb2c781378b7b6f86ae74b46c80742726b3461ed79f19ff3aff090b647c52f"
+      },
+      "statewide_trends": {
+        "current_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/U07/statewide-trends/current.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144511Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=12a582031e19d97fb65b296d27e0430a6099a779719c6af0bb47aef72f602848",
+        "history_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/U07/statewide-trends/history.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144511Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=2e4dd87cb5a7c17e803631dcf573b963420084d65dc1467848aef8d1d8dc0b1f"
+      },
+      "constituencies_prefix": "elections/2026_RESULTS_TEST/states/U07/constituencies"
+    }
+  },
+  "candidatewise": {
+    "S22-002": {
+      "current_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/S22/constituencies/002/candidatewise/current.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144512Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c75131b7d34faa6ab834e199c48a5c6e43674f3d8acac177da0496fa84dd25e7",
+      "history_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/S22/constituencies/002/candidatewise/history.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144513Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f06d58ac4854ea4462862a2a07cff7cbabf51570a8be3122bb382b62aff2011c"
+    },
+    "S25-001": {
+      "current_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/S25/constituencies/001/candidatewise/current.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144514Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=32adfb8afbab3a78ff8ef3e24529801e0d92aeaf1e12b44dee44913206dbd73b",
+      "history_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/S25/constituencies/001/candidatewise/history.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144514Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ab763c2ce6680472b61ec7584532c5b1346b93fc31303fec377a6351a1a130c4"
+    },
+    "S03-126": {
+      "current_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/S03/constituencies/126/candidatewise/current.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144515Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3bc3cce347824ae02dc1e543371c4853a1538fbb485a069a0556321615781671",
+      "history_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/S03/constituencies/126/candidatewise/history.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144516Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=db390089cb19d68783ab63c88db773d6f83b5d3b397ebfb056cbc6d2afce7444"
+    },
+    "S11-001": {
+      "current_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/S11/constituencies/001/candidatewise/current.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144516Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=92afdd309742a775c234eafc46c31e6a2f1ae35410880d2a9b37e4f564653b1f",
+      "history_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/S11/constituencies/001/candidatewise/history.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144517Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=067a3f5a78650d3114ab64d2d7e105ebc49202247ef33e5fd3b2d5291c57b24d"
+    },
+    "U07-001": {
+      "current_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/U07/constituencies/001/candidatewise/current.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144518Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9ac329e87a846c3212a5fd4d1d5bc49e3a08f1bc5ad0ebc671b3f5a2ad43b027",
+      "history_key": "https://e53ce7dac96f4ba103a2fa8bd0cb916f.r2.cloudflarestorage.com/election-dashboard/elections/2026_RESULTS_TEST/states/U07/constituencies/001/candidatewise/history.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=45ed76c81eb3525f82e304f58af55842%2F20260503%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260503T144519Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fcc143a1a892b00a88a761e465f914be769766e1090fdc1617d2181e5118be1a"
+    }
+  },
+  "templates": {
+    "partywise_current": "elections/{election_id}/states/{state_code}/partywise/current.csv",
+    "partywise_history": "elections/{election_id}/states/{state_code}/partywise/history.csv",
+    "statewide_trends_current": "elections/{election_id}/states/{state_code}/statewide-trends/current.csv",
+    "statewide_trends_history": "elections/{election_id}/states/{state_code}/statewide-trends/history.csv",
+    "candidatewise_current": "elections/{election_id}/states/{state_code}/constituencies/{constituency_no_padded}/candidatewise/current.csv",
+    "candidatewise_history": "elections/{election_id}/states/{state_code}/constituencies/{constituency_no_padded}/candidatewise/history.csv",
+    "summary_partywise_current": "elections/{election_id}/summary/partywise/current.csv",
+    "summary_partywise_history": "elections/{election_id}/summary/partywise/history.csv",
+    "summary_statewide_trends_current": "elections/{election_id}/summary/statewide-trends/current.csv",
+    "summary_statewide_trends_history": "elections/{election_id}/summary/statewide-trends/history.csv"
+  },
+  "source": "dummy-r2-test-data"
+}
