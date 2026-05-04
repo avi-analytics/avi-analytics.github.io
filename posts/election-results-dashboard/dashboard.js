@@ -3854,9 +3854,6 @@
     bindLiveAutoRefresh();
     bindSeatTrendControls();
     bindRegionalControls();
-    loadRegionalGroupDefinitions().then(() => {
-      refreshRegionalGroupSelectOptions();
-    });
 
     const mapRoot = document.getElementById("map-root");
     if (mapRoot) {
