@@ -1,0 +1,106 @@
+{
+  "schema_version": "2026-05-03",
+  "generated_at": "2026-05-04 03:41:38",
+  "election_id": "2026_RESULTS",
+  "root_prefix": "elections/2026_RESULTS",
+  "summary": {
+    "partywise": {
+      "current_key": "elections/2026_RESULTS/summary/partywise/current.csv",
+      "history_key": "elections/2026_RESULTS/summary/partywise/history.csv"
+    },
+    "statewide_trends": {
+      "current_key": "elections/2026_RESULTS/summary/statewide-trends/current.csv",
+      "history_key": "elections/2026_RESULTS/summary/statewide-trends/history.csv"
+    }
+  },
+  "states": {
+    "S25": {
+      "state_name": "West Bengal",
+      "state_code": "S25",
+      "dashboard_key": "wb",
+      "seat_count": 294,
+      "partywise": {
+        "current_key": "elections/2026_RESULTS/states/S25/partywise/current.csv",
+        "history_key": "elections/2026_RESULTS/states/S25/partywise/history.csv"
+      },
+      "statewide_trends": {
+        "current_key": "elections/2026_RESULTS/states/S25/statewide-trends/current.csv",
+        "history_key": "elections/2026_RESULTS/states/S25/statewide-trends/history.csv"
+      },
+      "constituencies_prefix": "elections/2026_RESULTS/states/S25/constituencies"
+    },
+    "S22": {
+      "state_name": "Tamil Nadu",
+      "state_code": "S22",
+      "dashboard_key": "tn",
+      "seat_count": 234,
+      "partywise": {
+        "current_key": "elections/2026_RESULTS/states/S22/partywise/current.csv",
+        "history_key": "elections/2026_RESULTS/states/S22/partywise/history.csv"
+      },
+      "statewide_trends": {
+        "current_key": "elections/2026_RESULTS/states/S22/statewide-trends/current.csv",
+        "history_key": "elections/2026_RESULTS/states/S22/statewide-trends/history.csv"
+      },
+      "constituencies_prefix": "elections/2026_RESULTS/states/S22/constituencies"
+    },
+    "S03": {
+      "state_name": "Assam",
+      "state_code": "S03",
+      "dashboard_key": "as",
+      "seat_count": 126,
+      "partywise": {
+        "current_key": "elections/2026_RESULTS/states/S03/partywise/current.csv",
+        "history_key": "elections/2026_RESULTS/states/S03/partywise/history.csv"
+      },
+      "statewide_trends": {
+        "current_key": "elections/2026_RESULTS/states/S03/statewide-trends/current.csv",
+        "history_key": "elections/2026_RESULTS/states/S03/statewide-trends/history.csv"
+      },
+      "constituencies_prefix": "elections/2026_RESULTS/states/S03/constituencies"
+    },
+    "S11": {
+      "state_name": "Kerala",
+      "state_code": "S11",
+      "dashboard_key": "kl",
+      "seat_count": 140,
+      "partywise": {
+        "current_key": "elections/2026_RESULTS/states/S11/partywise/current.csv",
+        "history_key": "elections/2026_RESULTS/states/S11/partywise/history.csv"
+      },
+      "statewide_trends": {
+        "current_key": "elections/2026_RESULTS/states/S11/statewide-trends/current.csv",
+        "history_key": "elections/2026_RESULTS/states/S11/statewide-trends/history.csv"
+      },
+      "constituencies_prefix": "elections/2026_RESULTS/states/S11/constituencies"
+    },
+    "U07": {
+      "state_name": "Puducherry",
+      "state_code": "U07",
+      "dashboard_key": "py",
+      "seat_count": 30,
+      "partywise": {
+        "current_key": "elections/2026_RESULTS/states/U07/partywise/current.csv",
+        "history_key": "elections/2026_RESULTS/states/U07/partywise/history.csv"
+      },
+      "statewide_trends": {
+        "current_key": "elections/2026_RESULTS/states/U07/statewide-trends/current.csv",
+        "history_key": "elections/2026_RESULTS/states/U07/statewide-trends/history.csv"
+      },
+      "constituencies_prefix": "elections/2026_RESULTS/states/U07/constituencies"
+    }
+  },
+  "templates": {
+    "partywise_current": "elections/{election_id}/states/{state_code}/partywise/current.csv",
+    "partywise_history": "elections/{election_id}/states/{state_code}/partywise/history.csv",
+    "statewide_trends_current": "elections/{election_id}/states/{state_code}/statewide-trends/current.csv",
+    "statewide_trends_history": "elections/{election_id}/states/{state_code}/statewide-trends/history.csv",
+    "candidatewise_current": "elections/{election_id}/states/{state_code}/constituencies/{constituency_no_padded}/candidatewise/current.csv",
+    "candidatewise_history": "elections/{election_id}/states/{state_code}/constituencies/{constituency_no_padded}/candidatewise/history.csv",
+    "summary_partywise_current": "elections/{election_id}/summary/partywise/current.csv",
+    "summary_partywise_history": "elections/{election_id}/summary/partywise/history.csv",
+    "summary_statewide_trends_current": "elections/{election_id}/summary/statewide-trends/current.csv",
+    "summary_statewide_trends_history": "elections/{election_id}/summary/statewide-trends/history.csv"
+  },
+  "constituency_no_format": "3-digit zero-padded string"
+}
