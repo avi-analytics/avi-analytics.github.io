@@ -102,5 +102,3303 @@
     "summary_statewide_trends_current": "elections/{election_id}/summary/statewide-trends/current.csv",
     "summary_statewide_trends_history": "elections/{election_id}/summary/statewide-trends/history.csv"
   },
-  "constituency_no_format": "3-digit zero-padded string"
+  "constituency_no_format": "3-digit zero-padded string",
+  "candidatewise": {
+    "S03-001": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/001/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/001/candidatewise/history.csv"
+    },
+    "S03-002": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/002/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/002/candidatewise/history.csv"
+    },
+    "S03-003": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/003/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/003/candidatewise/history.csv"
+    },
+    "S03-004": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/004/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/004/candidatewise/history.csv"
+    },
+    "S03-005": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/005/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/005/candidatewise/history.csv"
+    },
+    "S03-006": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/006/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/006/candidatewise/history.csv"
+    },
+    "S03-007": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/007/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/007/candidatewise/history.csv"
+    },
+    "S03-008": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/008/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/008/candidatewise/history.csv"
+    },
+    "S03-009": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/009/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/009/candidatewise/history.csv"
+    },
+    "S03-010": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/010/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/010/candidatewise/history.csv"
+    },
+    "S03-011": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/011/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/011/candidatewise/history.csv"
+    },
+    "S03-012": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/012/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/012/candidatewise/history.csv"
+    },
+    "S03-013": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/013/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/013/candidatewise/history.csv"
+    },
+    "S03-014": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/014/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/014/candidatewise/history.csv"
+    },
+    "S03-015": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/015/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/015/candidatewise/history.csv"
+    },
+    "S03-016": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/016/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/016/candidatewise/history.csv"
+    },
+    "S03-017": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/017/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/017/candidatewise/history.csv"
+    },
+    "S03-018": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/018/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/018/candidatewise/history.csv"
+    },
+    "S03-019": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/019/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/019/candidatewise/history.csv"
+    },
+    "S03-020": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/020/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/020/candidatewise/history.csv"
+    },
+    "S03-021": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/021/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/021/candidatewise/history.csv"
+    },
+    "S03-022": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/022/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/022/candidatewise/history.csv"
+    },
+    "S03-023": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/023/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/023/candidatewise/history.csv"
+    },
+    "S03-024": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/024/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/024/candidatewise/history.csv"
+    },
+    "S03-025": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/025/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/025/candidatewise/history.csv"
+    },
+    "S03-026": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/026/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/026/candidatewise/history.csv"
+    },
+    "S03-027": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/027/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/027/candidatewise/history.csv"
+    },
+    "S03-028": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/028/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/028/candidatewise/history.csv"
+    },
+    "S03-029": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/029/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/029/candidatewise/history.csv"
+    },
+    "S03-030": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/030/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/030/candidatewise/history.csv"
+    },
+    "S03-031": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/031/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/031/candidatewise/history.csv"
+    },
+    "S03-032": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/032/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/032/candidatewise/history.csv"
+    },
+    "S03-033": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/033/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/033/candidatewise/history.csv"
+    },
+    "S03-034": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/034/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/034/candidatewise/history.csv"
+    },
+    "S03-035": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/035/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/035/candidatewise/history.csv"
+    },
+    "S03-036": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/036/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/036/candidatewise/history.csv"
+    },
+    "S03-037": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/037/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/037/candidatewise/history.csv"
+    },
+    "S03-038": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/038/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/038/candidatewise/history.csv"
+    },
+    "S03-039": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/039/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/039/candidatewise/history.csv"
+    },
+    "S03-040": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/040/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/040/candidatewise/history.csv"
+    },
+    "S03-041": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/041/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/041/candidatewise/history.csv"
+    },
+    "S03-042": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/042/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/042/candidatewise/history.csv"
+    },
+    "S03-043": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/043/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/043/candidatewise/history.csv"
+    },
+    "S03-044": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/044/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/044/candidatewise/history.csv"
+    },
+    "S03-045": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/045/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/045/candidatewise/history.csv"
+    },
+    "S03-046": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/046/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/046/candidatewise/history.csv"
+    },
+    "S03-047": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/047/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/047/candidatewise/history.csv"
+    },
+    "S03-048": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/048/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/048/candidatewise/history.csv"
+    },
+    "S03-049": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/049/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/049/candidatewise/history.csv"
+    },
+    "S03-050": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/050/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/050/candidatewise/history.csv"
+    },
+    "S03-051": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/051/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/051/candidatewise/history.csv"
+    },
+    "S03-052": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/052/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/052/candidatewise/history.csv"
+    },
+    "S03-053": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/053/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/053/candidatewise/history.csv"
+    },
+    "S03-054": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/054/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/054/candidatewise/history.csv"
+    },
+    "S03-055": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/055/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/055/candidatewise/history.csv"
+    },
+    "S03-056": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/056/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/056/candidatewise/history.csv"
+    },
+    "S03-057": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/057/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/057/candidatewise/history.csv"
+    },
+    "S03-058": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/058/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/058/candidatewise/history.csv"
+    },
+    "S03-059": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/059/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/059/candidatewise/history.csv"
+    },
+    "S03-060": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/060/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/060/candidatewise/history.csv"
+    },
+    "S03-061": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/061/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/061/candidatewise/history.csv"
+    },
+    "S03-062": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/062/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/062/candidatewise/history.csv"
+    },
+    "S03-063": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/063/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/063/candidatewise/history.csv"
+    },
+    "S03-064": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/064/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/064/candidatewise/history.csv"
+    },
+    "S03-065": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/065/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/065/candidatewise/history.csv"
+    },
+    "S03-066": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/066/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/066/candidatewise/history.csv"
+    },
+    "S03-067": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/067/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/067/candidatewise/history.csv"
+    },
+    "S03-068": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/068/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/068/candidatewise/history.csv"
+    },
+    "S03-069": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/069/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/069/candidatewise/history.csv"
+    },
+    "S03-070": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/070/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/070/candidatewise/history.csv"
+    },
+    "S03-071": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/071/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/071/candidatewise/history.csv"
+    },
+    "S03-072": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/072/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/072/candidatewise/history.csv"
+    },
+    "S03-073": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/073/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/073/candidatewise/history.csv"
+    },
+    "S03-074": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/074/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/074/candidatewise/history.csv"
+    },
+    "S03-075": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/075/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/075/candidatewise/history.csv"
+    },
+    "S03-076": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/076/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/076/candidatewise/history.csv"
+    },
+    "S03-077": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/077/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/077/candidatewise/history.csv"
+    },
+    "S03-078": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/078/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/078/candidatewise/history.csv"
+    },
+    "S03-079": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/079/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/079/candidatewise/history.csv"
+    },
+    "S03-080": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/080/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/080/candidatewise/history.csv"
+    },
+    "S03-081": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/081/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/081/candidatewise/history.csv"
+    },
+    "S03-082": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/082/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/082/candidatewise/history.csv"
+    },
+    "S03-083": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/083/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/083/candidatewise/history.csv"
+    },
+    "S03-084": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/084/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/084/candidatewise/history.csv"
+    },
+    "S03-085": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/085/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/085/candidatewise/history.csv"
+    },
+    "S03-086": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/086/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/086/candidatewise/history.csv"
+    },
+    "S03-087": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/087/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/087/candidatewise/history.csv"
+    },
+    "S03-088": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/088/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/088/candidatewise/history.csv"
+    },
+    "S03-089": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/089/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/089/candidatewise/history.csv"
+    },
+    "S03-090": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/090/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/090/candidatewise/history.csv"
+    },
+    "S03-091": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/091/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/091/candidatewise/history.csv"
+    },
+    "S03-092": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/092/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/092/candidatewise/history.csv"
+    },
+    "S03-093": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/093/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/093/candidatewise/history.csv"
+    },
+    "S03-094": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/094/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/094/candidatewise/history.csv"
+    },
+    "S03-095": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/095/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/095/candidatewise/history.csv"
+    },
+    "S03-096": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/096/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/096/candidatewise/history.csv"
+    },
+    "S03-097": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/097/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/097/candidatewise/history.csv"
+    },
+    "S03-098": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/098/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/098/candidatewise/history.csv"
+    },
+    "S03-099": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/099/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/099/candidatewise/history.csv"
+    },
+    "S03-100": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/100/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/100/candidatewise/history.csv"
+    },
+    "S03-101": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/101/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/101/candidatewise/history.csv"
+    },
+    "S03-102": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/102/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/102/candidatewise/history.csv"
+    },
+    "S03-103": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/103/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/103/candidatewise/history.csv"
+    },
+    "S03-104": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/104/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/104/candidatewise/history.csv"
+    },
+    "S03-105": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/105/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/105/candidatewise/history.csv"
+    },
+    "S03-106": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/106/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/106/candidatewise/history.csv"
+    },
+    "S03-107": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/107/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/107/candidatewise/history.csv"
+    },
+    "S03-108": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/108/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/108/candidatewise/history.csv"
+    },
+    "S03-109": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/109/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/109/candidatewise/history.csv"
+    },
+    "S03-110": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/110/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/110/candidatewise/history.csv"
+    },
+    "S03-111": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/111/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/111/candidatewise/history.csv"
+    },
+    "S03-112": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/112/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/112/candidatewise/history.csv"
+    },
+    "S03-113": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/113/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/113/candidatewise/history.csv"
+    },
+    "S03-114": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/114/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/114/candidatewise/history.csv"
+    },
+    "S03-115": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/115/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/115/candidatewise/history.csv"
+    },
+    "S03-116": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/116/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/116/candidatewise/history.csv"
+    },
+    "S03-117": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/117/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/117/candidatewise/history.csv"
+    },
+    "S03-118": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/118/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/118/candidatewise/history.csv"
+    },
+    "S03-119": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/119/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/119/candidatewise/history.csv"
+    },
+    "S03-120": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/120/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/120/candidatewise/history.csv"
+    },
+    "S03-121": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/121/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/121/candidatewise/history.csv"
+    },
+    "S03-122": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/122/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/122/candidatewise/history.csv"
+    },
+    "S03-123": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/123/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/123/candidatewise/history.csv"
+    },
+    "S03-124": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/124/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/124/candidatewise/history.csv"
+    },
+    "S03-125": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/125/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/125/candidatewise/history.csv"
+    },
+    "S03-126": {
+      "current_key": "elections/2026_RESULTS/states/S03/constituencies/126/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S03/constituencies/126/candidatewise/history.csv"
+    },
+    "S11-001": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/001/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/001/candidatewise/history.csv"
+    },
+    "S11-002": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/002/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/002/candidatewise/history.csv"
+    },
+    "S11-003": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/003/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/003/candidatewise/history.csv"
+    },
+    "S11-004": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/004/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/004/candidatewise/history.csv"
+    },
+    "S11-005": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/005/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/005/candidatewise/history.csv"
+    },
+    "S11-006": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/006/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/006/candidatewise/history.csv"
+    },
+    "S11-007": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/007/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/007/candidatewise/history.csv"
+    },
+    "S11-008": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/008/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/008/candidatewise/history.csv"
+    },
+    "S11-009": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/009/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/009/candidatewise/history.csv"
+    },
+    "S11-010": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/010/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/010/candidatewise/history.csv"
+    },
+    "S11-011": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/011/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/011/candidatewise/history.csv"
+    },
+    "S11-012": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/012/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/012/candidatewise/history.csv"
+    },
+    "S11-013": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/013/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/013/candidatewise/history.csv"
+    },
+    "S11-014": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/014/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/014/candidatewise/history.csv"
+    },
+    "S11-015": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/015/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/015/candidatewise/history.csv"
+    },
+    "S11-016": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/016/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/016/candidatewise/history.csv"
+    },
+    "S11-017": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/017/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/017/candidatewise/history.csv"
+    },
+    "S11-018": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/018/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/018/candidatewise/history.csv"
+    },
+    "S11-019": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/019/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/019/candidatewise/history.csv"
+    },
+    "S11-020": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/020/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/020/candidatewise/history.csv"
+    },
+    "S11-021": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/021/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/021/candidatewise/history.csv"
+    },
+    "S11-022": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/022/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/022/candidatewise/history.csv"
+    },
+    "S11-023": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/023/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/023/candidatewise/history.csv"
+    },
+    "S11-024": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/024/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/024/candidatewise/history.csv"
+    },
+    "S11-025": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/025/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/025/candidatewise/history.csv"
+    },
+    "S11-026": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/026/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/026/candidatewise/history.csv"
+    },
+    "S11-027": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/027/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/027/candidatewise/history.csv"
+    },
+    "S11-028": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/028/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/028/candidatewise/history.csv"
+    },
+    "S11-029": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/029/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/029/candidatewise/history.csv"
+    },
+    "S11-030": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/030/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/030/candidatewise/history.csv"
+    },
+    "S11-031": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/031/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/031/candidatewise/history.csv"
+    },
+    "S11-032": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/032/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/032/candidatewise/history.csv"
+    },
+    "S11-033": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/033/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/033/candidatewise/history.csv"
+    },
+    "S11-034": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/034/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/034/candidatewise/history.csv"
+    },
+    "S11-035": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/035/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/035/candidatewise/history.csv"
+    },
+    "S11-036": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/036/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/036/candidatewise/history.csv"
+    },
+    "S11-037": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/037/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/037/candidatewise/history.csv"
+    },
+    "S11-038": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/038/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/038/candidatewise/history.csv"
+    },
+    "S11-039": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/039/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/039/candidatewise/history.csv"
+    },
+    "S11-040": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/040/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/040/candidatewise/history.csv"
+    },
+    "S11-041": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/041/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/041/candidatewise/history.csv"
+    },
+    "S11-042": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/042/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/042/candidatewise/history.csv"
+    },
+    "S11-043": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/043/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/043/candidatewise/history.csv"
+    },
+    "S11-044": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/044/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/044/candidatewise/history.csv"
+    },
+    "S11-045": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/045/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/045/candidatewise/history.csv"
+    },
+    "S11-046": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/046/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/046/candidatewise/history.csv"
+    },
+    "S11-047": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/047/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/047/candidatewise/history.csv"
+    },
+    "S11-048": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/048/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/048/candidatewise/history.csv"
+    },
+    "S11-049": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/049/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/049/candidatewise/history.csv"
+    },
+    "S11-050": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/050/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/050/candidatewise/history.csv"
+    },
+    "S11-051": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/051/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/051/candidatewise/history.csv"
+    },
+    "S11-052": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/052/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/052/candidatewise/history.csv"
+    },
+    "S11-053": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/053/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/053/candidatewise/history.csv"
+    },
+    "S11-054": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/054/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/054/candidatewise/history.csv"
+    },
+    "S11-055": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/055/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/055/candidatewise/history.csv"
+    },
+    "S11-056": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/056/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/056/candidatewise/history.csv"
+    },
+    "S11-057": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/057/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/057/candidatewise/history.csv"
+    },
+    "S11-058": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/058/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/058/candidatewise/history.csv"
+    },
+    "S11-059": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/059/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/059/candidatewise/history.csv"
+    },
+    "S11-060": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/060/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/060/candidatewise/history.csv"
+    },
+    "S11-061": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/061/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/061/candidatewise/history.csv"
+    },
+    "S11-062": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/062/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/062/candidatewise/history.csv"
+    },
+    "S11-063": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/063/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/063/candidatewise/history.csv"
+    },
+    "S11-064": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/064/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/064/candidatewise/history.csv"
+    },
+    "S11-065": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/065/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/065/candidatewise/history.csv"
+    },
+    "S11-066": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/066/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/066/candidatewise/history.csv"
+    },
+    "S11-067": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/067/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/067/candidatewise/history.csv"
+    },
+    "S11-068": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/068/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/068/candidatewise/history.csv"
+    },
+    "S11-069": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/069/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/069/candidatewise/history.csv"
+    },
+    "S11-070": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/070/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/070/candidatewise/history.csv"
+    },
+    "S11-071": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/071/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/071/candidatewise/history.csv"
+    },
+    "S11-072": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/072/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/072/candidatewise/history.csv"
+    },
+    "S11-073": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/073/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/073/candidatewise/history.csv"
+    },
+    "S11-074": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/074/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/074/candidatewise/history.csv"
+    },
+    "S11-075": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/075/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/075/candidatewise/history.csv"
+    },
+    "S11-076": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/076/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/076/candidatewise/history.csv"
+    },
+    "S11-077": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/077/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/077/candidatewise/history.csv"
+    },
+    "S11-078": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/078/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/078/candidatewise/history.csv"
+    },
+    "S11-079": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/079/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/079/candidatewise/history.csv"
+    },
+    "S11-080": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/080/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/080/candidatewise/history.csv"
+    },
+    "S11-081": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/081/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/081/candidatewise/history.csv"
+    },
+    "S11-082": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/082/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/082/candidatewise/history.csv"
+    },
+    "S11-083": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/083/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/083/candidatewise/history.csv"
+    },
+    "S11-084": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/084/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/084/candidatewise/history.csv"
+    },
+    "S11-085": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/085/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/085/candidatewise/history.csv"
+    },
+    "S11-086": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/086/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/086/candidatewise/history.csv"
+    },
+    "S11-087": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/087/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/087/candidatewise/history.csv"
+    },
+    "S11-088": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/088/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/088/candidatewise/history.csv"
+    },
+    "S11-089": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/089/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/089/candidatewise/history.csv"
+    },
+    "S11-090": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/090/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/090/candidatewise/history.csv"
+    },
+    "S11-091": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/091/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/091/candidatewise/history.csv"
+    },
+    "S11-092": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/092/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/092/candidatewise/history.csv"
+    },
+    "S11-093": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/093/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/093/candidatewise/history.csv"
+    },
+    "S11-094": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/094/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/094/candidatewise/history.csv"
+    },
+    "S11-095": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/095/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/095/candidatewise/history.csv"
+    },
+    "S11-096": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/096/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/096/candidatewise/history.csv"
+    },
+    "S11-097": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/097/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/097/candidatewise/history.csv"
+    },
+    "S11-098": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/098/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/098/candidatewise/history.csv"
+    },
+    "S11-099": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/099/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/099/candidatewise/history.csv"
+    },
+    "S11-100": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/100/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/100/candidatewise/history.csv"
+    },
+    "S11-101": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/101/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/101/candidatewise/history.csv"
+    },
+    "S11-102": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/102/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/102/candidatewise/history.csv"
+    },
+    "S11-103": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/103/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/103/candidatewise/history.csv"
+    },
+    "S11-104": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/104/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/104/candidatewise/history.csv"
+    },
+    "S11-105": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/105/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/105/candidatewise/history.csv"
+    },
+    "S11-106": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/106/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/106/candidatewise/history.csv"
+    },
+    "S11-107": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/107/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/107/candidatewise/history.csv"
+    },
+    "S11-108": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/108/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/108/candidatewise/history.csv"
+    },
+    "S11-109": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/109/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/109/candidatewise/history.csv"
+    },
+    "S11-110": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/110/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/110/candidatewise/history.csv"
+    },
+    "S11-111": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/111/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/111/candidatewise/history.csv"
+    },
+    "S11-112": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/112/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/112/candidatewise/history.csv"
+    },
+    "S11-113": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/113/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/113/candidatewise/history.csv"
+    },
+    "S11-114": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/114/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/114/candidatewise/history.csv"
+    },
+    "S11-115": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/115/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/115/candidatewise/history.csv"
+    },
+    "S11-116": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/116/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/116/candidatewise/history.csv"
+    },
+    "S11-117": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/117/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/117/candidatewise/history.csv"
+    },
+    "S11-118": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/118/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/118/candidatewise/history.csv"
+    },
+    "S11-119": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/119/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/119/candidatewise/history.csv"
+    },
+    "S11-120": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/120/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/120/candidatewise/history.csv"
+    },
+    "S11-121": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/121/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/121/candidatewise/history.csv"
+    },
+    "S11-122": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/122/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/122/candidatewise/history.csv"
+    },
+    "S11-123": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/123/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/123/candidatewise/history.csv"
+    },
+    "S11-124": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/124/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/124/candidatewise/history.csv"
+    },
+    "S11-125": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/125/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/125/candidatewise/history.csv"
+    },
+    "S11-126": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/126/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/126/candidatewise/history.csv"
+    },
+    "S11-127": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/127/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/127/candidatewise/history.csv"
+    },
+    "S11-128": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/128/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/128/candidatewise/history.csv"
+    },
+    "S11-129": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/129/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/129/candidatewise/history.csv"
+    },
+    "S11-130": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/130/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/130/candidatewise/history.csv"
+    },
+    "S11-131": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/131/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/131/candidatewise/history.csv"
+    },
+    "S11-132": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/132/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/132/candidatewise/history.csv"
+    },
+    "S11-133": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/133/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/133/candidatewise/history.csv"
+    },
+    "S11-134": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/134/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/134/candidatewise/history.csv"
+    },
+    "S11-135": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/135/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/135/candidatewise/history.csv"
+    },
+    "S11-136": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/136/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/136/candidatewise/history.csv"
+    },
+    "S11-137": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/137/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/137/candidatewise/history.csv"
+    },
+    "S11-138": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/138/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/138/candidatewise/history.csv"
+    },
+    "S11-139": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/139/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/139/candidatewise/history.csv"
+    },
+    "S11-140": {
+      "current_key": "elections/2026_RESULTS/states/S11/constituencies/140/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S11/constituencies/140/candidatewise/history.csv"
+    },
+    "S22-001": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/001/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/001/candidatewise/history.csv"
+    },
+    "S22-002": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/002/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/002/candidatewise/history.csv"
+    },
+    "S22-003": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/003/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/003/candidatewise/history.csv"
+    },
+    "S22-004": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/004/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/004/candidatewise/history.csv"
+    },
+    "S22-005": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/005/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/005/candidatewise/history.csv"
+    },
+    "S22-006": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/006/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/006/candidatewise/history.csv"
+    },
+    "S22-007": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/007/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/007/candidatewise/history.csv"
+    },
+    "S22-008": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/008/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/008/candidatewise/history.csv"
+    },
+    "S22-009": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/009/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/009/candidatewise/history.csv"
+    },
+    "S22-010": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/010/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/010/candidatewise/history.csv"
+    },
+    "S22-011": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/011/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/011/candidatewise/history.csv"
+    },
+    "S22-012": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/012/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/012/candidatewise/history.csv"
+    },
+    "S22-013": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/013/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/013/candidatewise/history.csv"
+    },
+    "S22-014": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/014/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/014/candidatewise/history.csv"
+    },
+    "S22-015": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/015/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/015/candidatewise/history.csv"
+    },
+    "S22-016": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/016/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/016/candidatewise/history.csv"
+    },
+    "S22-017": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/017/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/017/candidatewise/history.csv"
+    },
+    "S22-018": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/018/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/018/candidatewise/history.csv"
+    },
+    "S22-019": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/019/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/019/candidatewise/history.csv"
+    },
+    "S22-020": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/020/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/020/candidatewise/history.csv"
+    },
+    "S22-021": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/021/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/021/candidatewise/history.csv"
+    },
+    "S22-022": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/022/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/022/candidatewise/history.csv"
+    },
+    "S22-023": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/023/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/023/candidatewise/history.csv"
+    },
+    "S22-024": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/024/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/024/candidatewise/history.csv"
+    },
+    "S22-025": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/025/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/025/candidatewise/history.csv"
+    },
+    "S22-026": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/026/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/026/candidatewise/history.csv"
+    },
+    "S22-027": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/027/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/027/candidatewise/history.csv"
+    },
+    "S22-028": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/028/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/028/candidatewise/history.csv"
+    },
+    "S22-029": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/029/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/029/candidatewise/history.csv"
+    },
+    "S22-030": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/030/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/030/candidatewise/history.csv"
+    },
+    "S22-031": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/031/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/031/candidatewise/history.csv"
+    },
+    "S22-032": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/032/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/032/candidatewise/history.csv"
+    },
+    "S22-033": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/033/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/033/candidatewise/history.csv"
+    },
+    "S22-034": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/034/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/034/candidatewise/history.csv"
+    },
+    "S22-035": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/035/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/035/candidatewise/history.csv"
+    },
+    "S22-036": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/036/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/036/candidatewise/history.csv"
+    },
+    "S22-037": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/037/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/037/candidatewise/history.csv"
+    },
+    "S22-038": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/038/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/038/candidatewise/history.csv"
+    },
+    "S22-039": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/039/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/039/candidatewise/history.csv"
+    },
+    "S22-040": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/040/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/040/candidatewise/history.csv"
+    },
+    "S22-041": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/041/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/041/candidatewise/history.csv"
+    },
+    "S22-042": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/042/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/042/candidatewise/history.csv"
+    },
+    "S22-043": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/043/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/043/candidatewise/history.csv"
+    },
+    "S22-044": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/044/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/044/candidatewise/history.csv"
+    },
+    "S22-045": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/045/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/045/candidatewise/history.csv"
+    },
+    "S22-046": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/046/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/046/candidatewise/history.csv"
+    },
+    "S22-047": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/047/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/047/candidatewise/history.csv"
+    },
+    "S22-048": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/048/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/048/candidatewise/history.csv"
+    },
+    "S22-049": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/049/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/049/candidatewise/history.csv"
+    },
+    "S22-050": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/050/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/050/candidatewise/history.csv"
+    },
+    "S22-051": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/051/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/051/candidatewise/history.csv"
+    },
+    "S22-052": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/052/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/052/candidatewise/history.csv"
+    },
+    "S22-053": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/053/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/053/candidatewise/history.csv"
+    },
+    "S22-054": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/054/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/054/candidatewise/history.csv"
+    },
+    "S22-055": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/055/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/055/candidatewise/history.csv"
+    },
+    "S22-056": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/056/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/056/candidatewise/history.csv"
+    },
+    "S22-057": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/057/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/057/candidatewise/history.csv"
+    },
+    "S22-058": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/058/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/058/candidatewise/history.csv"
+    },
+    "S22-059": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/059/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/059/candidatewise/history.csv"
+    },
+    "S22-060": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/060/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/060/candidatewise/history.csv"
+    },
+    "S22-061": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/061/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/061/candidatewise/history.csv"
+    },
+    "S22-062": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/062/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/062/candidatewise/history.csv"
+    },
+    "S22-063": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/063/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/063/candidatewise/history.csv"
+    },
+    "S22-064": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/064/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/064/candidatewise/history.csv"
+    },
+    "S22-065": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/065/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/065/candidatewise/history.csv"
+    },
+    "S22-066": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/066/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/066/candidatewise/history.csv"
+    },
+    "S22-067": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/067/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/067/candidatewise/history.csv"
+    },
+    "S22-068": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/068/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/068/candidatewise/history.csv"
+    },
+    "S22-069": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/069/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/069/candidatewise/history.csv"
+    },
+    "S22-070": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/070/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/070/candidatewise/history.csv"
+    },
+    "S22-071": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/071/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/071/candidatewise/history.csv"
+    },
+    "S22-072": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/072/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/072/candidatewise/history.csv"
+    },
+    "S22-073": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/073/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/073/candidatewise/history.csv"
+    },
+    "S22-074": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/074/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/074/candidatewise/history.csv"
+    },
+    "S22-075": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/075/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/075/candidatewise/history.csv"
+    },
+    "S22-076": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/076/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/076/candidatewise/history.csv"
+    },
+    "S22-077": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/077/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/077/candidatewise/history.csv"
+    },
+    "S22-078": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/078/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/078/candidatewise/history.csv"
+    },
+    "S22-079": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/079/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/079/candidatewise/history.csv"
+    },
+    "S22-080": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/080/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/080/candidatewise/history.csv"
+    },
+    "S22-081": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/081/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/081/candidatewise/history.csv"
+    },
+    "S22-082": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/082/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/082/candidatewise/history.csv"
+    },
+    "S22-083": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/083/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/083/candidatewise/history.csv"
+    },
+    "S22-084": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/084/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/084/candidatewise/history.csv"
+    },
+    "S22-085": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/085/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/085/candidatewise/history.csv"
+    },
+    "S22-086": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/086/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/086/candidatewise/history.csv"
+    },
+    "S22-087": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/087/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/087/candidatewise/history.csv"
+    },
+    "S22-088": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/088/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/088/candidatewise/history.csv"
+    },
+    "S22-089": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/089/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/089/candidatewise/history.csv"
+    },
+    "S22-090": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/090/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/090/candidatewise/history.csv"
+    },
+    "S22-091": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/091/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/091/candidatewise/history.csv"
+    },
+    "S22-092": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/092/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/092/candidatewise/history.csv"
+    },
+    "S22-093": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/093/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/093/candidatewise/history.csv"
+    },
+    "S22-094": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/094/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/094/candidatewise/history.csv"
+    },
+    "S22-095": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/095/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/095/candidatewise/history.csv"
+    },
+    "S22-096": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/096/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/096/candidatewise/history.csv"
+    },
+    "S22-097": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/097/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/097/candidatewise/history.csv"
+    },
+    "S22-098": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/098/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/098/candidatewise/history.csv"
+    },
+    "S22-099": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/099/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/099/candidatewise/history.csv"
+    },
+    "S22-100": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/100/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/100/candidatewise/history.csv"
+    },
+    "S22-101": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/101/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/101/candidatewise/history.csv"
+    },
+    "S22-102": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/102/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/102/candidatewise/history.csv"
+    },
+    "S22-103": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/103/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/103/candidatewise/history.csv"
+    },
+    "S22-104": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/104/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/104/candidatewise/history.csv"
+    },
+    "S22-105": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/105/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/105/candidatewise/history.csv"
+    },
+    "S22-106": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/106/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/106/candidatewise/history.csv"
+    },
+    "S22-107": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/107/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/107/candidatewise/history.csv"
+    },
+    "S22-108": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/108/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/108/candidatewise/history.csv"
+    },
+    "S22-109": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/109/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/109/candidatewise/history.csv"
+    },
+    "S22-110": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/110/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/110/candidatewise/history.csv"
+    },
+    "S22-111": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/111/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/111/candidatewise/history.csv"
+    },
+    "S22-112": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/112/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/112/candidatewise/history.csv"
+    },
+    "S22-113": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/113/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/113/candidatewise/history.csv"
+    },
+    "S22-114": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/114/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/114/candidatewise/history.csv"
+    },
+    "S22-115": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/115/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/115/candidatewise/history.csv"
+    },
+    "S22-116": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/116/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/116/candidatewise/history.csv"
+    },
+    "S22-117": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/117/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/117/candidatewise/history.csv"
+    },
+    "S22-118": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/118/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/118/candidatewise/history.csv"
+    },
+    "S22-119": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/119/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/119/candidatewise/history.csv"
+    },
+    "S22-120": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/120/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/120/candidatewise/history.csv"
+    },
+    "S22-121": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/121/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/121/candidatewise/history.csv"
+    },
+    "S22-122": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/122/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/122/candidatewise/history.csv"
+    },
+    "S22-123": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/123/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/123/candidatewise/history.csv"
+    },
+    "S22-124": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/124/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/124/candidatewise/history.csv"
+    },
+    "S22-125": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/125/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/125/candidatewise/history.csv"
+    },
+    "S22-126": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/126/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/126/candidatewise/history.csv"
+    },
+    "S22-127": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/127/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/127/candidatewise/history.csv"
+    },
+    "S22-128": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/128/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/128/candidatewise/history.csv"
+    },
+    "S22-129": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/129/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/129/candidatewise/history.csv"
+    },
+    "S22-130": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/130/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/130/candidatewise/history.csv"
+    },
+    "S22-131": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/131/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/131/candidatewise/history.csv"
+    },
+    "S22-132": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/132/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/132/candidatewise/history.csv"
+    },
+    "S22-133": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/133/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/133/candidatewise/history.csv"
+    },
+    "S22-134": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/134/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/134/candidatewise/history.csv"
+    },
+    "S22-135": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/135/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/135/candidatewise/history.csv"
+    },
+    "S22-136": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/136/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/136/candidatewise/history.csv"
+    },
+    "S22-137": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/137/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/137/candidatewise/history.csv"
+    },
+    "S22-138": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/138/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/138/candidatewise/history.csv"
+    },
+    "S22-139": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/139/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/139/candidatewise/history.csv"
+    },
+    "S22-140": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/140/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/140/candidatewise/history.csv"
+    },
+    "S22-141": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/141/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/141/candidatewise/history.csv"
+    },
+    "S22-142": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/142/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/142/candidatewise/history.csv"
+    },
+    "S22-143": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/143/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/143/candidatewise/history.csv"
+    },
+    "S22-144": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/144/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/144/candidatewise/history.csv"
+    },
+    "S22-145": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/145/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/145/candidatewise/history.csv"
+    },
+    "S22-146": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/146/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/146/candidatewise/history.csv"
+    },
+    "S22-147": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/147/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/147/candidatewise/history.csv"
+    },
+    "S22-148": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/148/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/148/candidatewise/history.csv"
+    },
+    "S22-149": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/149/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/149/candidatewise/history.csv"
+    },
+    "S22-150": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/150/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/150/candidatewise/history.csv"
+    },
+    "S22-151": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/151/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/151/candidatewise/history.csv"
+    },
+    "S22-152": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/152/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/152/candidatewise/history.csv"
+    },
+    "S22-153": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/153/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/153/candidatewise/history.csv"
+    },
+    "S22-154": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/154/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/154/candidatewise/history.csv"
+    },
+    "S22-155": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/155/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/155/candidatewise/history.csv"
+    },
+    "S22-156": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/156/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/156/candidatewise/history.csv"
+    },
+    "S22-157": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/157/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/157/candidatewise/history.csv"
+    },
+    "S22-158": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/158/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/158/candidatewise/history.csv"
+    },
+    "S22-159": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/159/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/159/candidatewise/history.csv"
+    },
+    "S22-160": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/160/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/160/candidatewise/history.csv"
+    },
+    "S22-161": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/161/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/161/candidatewise/history.csv"
+    },
+    "S22-162": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/162/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/162/candidatewise/history.csv"
+    },
+    "S22-163": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/163/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/163/candidatewise/history.csv"
+    },
+    "S22-164": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/164/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/164/candidatewise/history.csv"
+    },
+    "S22-165": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/165/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/165/candidatewise/history.csv"
+    },
+    "S22-166": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/166/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/166/candidatewise/history.csv"
+    },
+    "S22-167": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/167/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/167/candidatewise/history.csv"
+    },
+    "S22-168": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/168/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/168/candidatewise/history.csv"
+    },
+    "S22-169": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/169/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/169/candidatewise/history.csv"
+    },
+    "S22-170": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/170/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/170/candidatewise/history.csv"
+    },
+    "S22-171": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/171/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/171/candidatewise/history.csv"
+    },
+    "S22-172": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/172/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/172/candidatewise/history.csv"
+    },
+    "S22-173": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/173/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/173/candidatewise/history.csv"
+    },
+    "S22-174": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/174/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/174/candidatewise/history.csv"
+    },
+    "S22-175": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/175/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/175/candidatewise/history.csv"
+    },
+    "S22-176": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/176/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/176/candidatewise/history.csv"
+    },
+    "S22-177": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/177/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/177/candidatewise/history.csv"
+    },
+    "S22-178": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/178/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/178/candidatewise/history.csv"
+    },
+    "S22-179": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/179/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/179/candidatewise/history.csv"
+    },
+    "S22-180": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/180/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/180/candidatewise/history.csv"
+    },
+    "S22-181": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/181/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/181/candidatewise/history.csv"
+    },
+    "S22-182": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/182/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/182/candidatewise/history.csv"
+    },
+    "S22-183": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/183/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/183/candidatewise/history.csv"
+    },
+    "S22-184": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/184/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/184/candidatewise/history.csv"
+    },
+    "S22-185": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/185/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/185/candidatewise/history.csv"
+    },
+    "S22-186": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/186/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/186/candidatewise/history.csv"
+    },
+    "S22-187": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/187/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/187/candidatewise/history.csv"
+    },
+    "S22-188": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/188/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/188/candidatewise/history.csv"
+    },
+    "S22-189": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/189/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/189/candidatewise/history.csv"
+    },
+    "S22-190": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/190/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/190/candidatewise/history.csv"
+    },
+    "S22-191": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/191/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/191/candidatewise/history.csv"
+    },
+    "S22-192": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/192/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/192/candidatewise/history.csv"
+    },
+    "S22-193": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/193/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/193/candidatewise/history.csv"
+    },
+    "S22-194": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/194/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/194/candidatewise/history.csv"
+    },
+    "S22-195": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/195/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/195/candidatewise/history.csv"
+    },
+    "S22-196": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/196/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/196/candidatewise/history.csv"
+    },
+    "S22-197": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/197/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/197/candidatewise/history.csv"
+    },
+    "S22-198": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/198/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/198/candidatewise/history.csv"
+    },
+    "S22-199": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/199/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/199/candidatewise/history.csv"
+    },
+    "S22-200": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/200/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/200/candidatewise/history.csv"
+    },
+    "S22-201": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/201/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/201/candidatewise/history.csv"
+    },
+    "S22-202": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/202/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/202/candidatewise/history.csv"
+    },
+    "S22-203": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/203/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/203/candidatewise/history.csv"
+    },
+    "S22-204": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/204/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/204/candidatewise/history.csv"
+    },
+    "S22-205": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/205/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/205/candidatewise/history.csv"
+    },
+    "S22-206": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/206/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/206/candidatewise/history.csv"
+    },
+    "S22-207": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/207/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/207/candidatewise/history.csv"
+    },
+    "S22-208": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/208/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/208/candidatewise/history.csv"
+    },
+    "S22-209": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/209/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/209/candidatewise/history.csv"
+    },
+    "S22-210": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/210/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/210/candidatewise/history.csv"
+    },
+    "S22-211": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/211/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/211/candidatewise/history.csv"
+    },
+    "S22-212": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/212/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/212/candidatewise/history.csv"
+    },
+    "S22-213": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/213/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/213/candidatewise/history.csv"
+    },
+    "S22-214": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/214/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/214/candidatewise/history.csv"
+    },
+    "S22-215": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/215/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/215/candidatewise/history.csv"
+    },
+    "S22-216": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/216/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/216/candidatewise/history.csv"
+    },
+    "S22-217": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/217/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/217/candidatewise/history.csv"
+    },
+    "S22-218": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/218/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/218/candidatewise/history.csv"
+    },
+    "S22-219": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/219/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/219/candidatewise/history.csv"
+    },
+    "S22-220": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/220/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/220/candidatewise/history.csv"
+    },
+    "S22-221": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/221/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/221/candidatewise/history.csv"
+    },
+    "S22-222": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/222/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/222/candidatewise/history.csv"
+    },
+    "S22-223": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/223/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/223/candidatewise/history.csv"
+    },
+    "S22-224": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/224/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/224/candidatewise/history.csv"
+    },
+    "S22-225": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/225/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/225/candidatewise/history.csv"
+    },
+    "S22-226": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/226/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/226/candidatewise/history.csv"
+    },
+    "S22-227": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/227/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/227/candidatewise/history.csv"
+    },
+    "S22-228": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/228/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/228/candidatewise/history.csv"
+    },
+    "S22-229": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/229/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/229/candidatewise/history.csv"
+    },
+    "S22-230": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/230/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/230/candidatewise/history.csv"
+    },
+    "S22-231": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/231/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/231/candidatewise/history.csv"
+    },
+    "S22-232": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/232/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/232/candidatewise/history.csv"
+    },
+    "S22-233": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/233/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/233/candidatewise/history.csv"
+    },
+    "S22-234": {
+      "current_key": "elections/2026_RESULTS/states/S22/constituencies/234/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S22/constituencies/234/candidatewise/history.csv"
+    },
+    "S25-001": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/001/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/001/candidatewise/history.csv"
+    },
+    "S25-002": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/002/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/002/candidatewise/history.csv"
+    },
+    "S25-003": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/003/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/003/candidatewise/history.csv"
+    },
+    "S25-004": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/004/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/004/candidatewise/history.csv"
+    },
+    "S25-005": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/005/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/005/candidatewise/history.csv"
+    },
+    "S25-006": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/006/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/006/candidatewise/history.csv"
+    },
+    "S25-007": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/007/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/007/candidatewise/history.csv"
+    },
+    "S25-008": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/008/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/008/candidatewise/history.csv"
+    },
+    "S25-009": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/009/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/009/candidatewise/history.csv"
+    },
+    "S25-010": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/010/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/010/candidatewise/history.csv"
+    },
+    "S25-011": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/011/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/011/candidatewise/history.csv"
+    },
+    "S25-012": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/012/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/012/candidatewise/history.csv"
+    },
+    "S25-013": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/013/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/013/candidatewise/history.csv"
+    },
+    "S25-014": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/014/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/014/candidatewise/history.csv"
+    },
+    "S25-015": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/015/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/015/candidatewise/history.csv"
+    },
+    "S25-016": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/016/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/016/candidatewise/history.csv"
+    },
+    "S25-017": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/017/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/017/candidatewise/history.csv"
+    },
+    "S25-018": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/018/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/018/candidatewise/history.csv"
+    },
+    "S25-019": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/019/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/019/candidatewise/history.csv"
+    },
+    "S25-020": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/020/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/020/candidatewise/history.csv"
+    },
+    "S25-021": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/021/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/021/candidatewise/history.csv"
+    },
+    "S25-022": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/022/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/022/candidatewise/history.csv"
+    },
+    "S25-023": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/023/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/023/candidatewise/history.csv"
+    },
+    "S25-024": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/024/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/024/candidatewise/history.csv"
+    },
+    "S25-025": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/025/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/025/candidatewise/history.csv"
+    },
+    "S25-026": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/026/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/026/candidatewise/history.csv"
+    },
+    "S25-027": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/027/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/027/candidatewise/history.csv"
+    },
+    "S25-028": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/028/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/028/candidatewise/history.csv"
+    },
+    "S25-029": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/029/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/029/candidatewise/history.csv"
+    },
+    "S25-030": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/030/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/030/candidatewise/history.csv"
+    },
+    "S25-031": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/031/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/031/candidatewise/history.csv"
+    },
+    "S25-032": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/032/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/032/candidatewise/history.csv"
+    },
+    "S25-033": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/033/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/033/candidatewise/history.csv"
+    },
+    "S25-034": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/034/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/034/candidatewise/history.csv"
+    },
+    "S25-035": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/035/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/035/candidatewise/history.csv"
+    },
+    "S25-036": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/036/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/036/candidatewise/history.csv"
+    },
+    "S25-037": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/037/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/037/candidatewise/history.csv"
+    },
+    "S25-038": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/038/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/038/candidatewise/history.csv"
+    },
+    "S25-039": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/039/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/039/candidatewise/history.csv"
+    },
+    "S25-040": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/040/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/040/candidatewise/history.csv"
+    },
+    "S25-041": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/041/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/041/candidatewise/history.csv"
+    },
+    "S25-042": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/042/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/042/candidatewise/history.csv"
+    },
+    "S25-043": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/043/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/043/candidatewise/history.csv"
+    },
+    "S25-044": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/044/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/044/candidatewise/history.csv"
+    },
+    "S25-045": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/045/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/045/candidatewise/history.csv"
+    },
+    "S25-046": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/046/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/046/candidatewise/history.csv"
+    },
+    "S25-047": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/047/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/047/candidatewise/history.csv"
+    },
+    "S25-048": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/048/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/048/candidatewise/history.csv"
+    },
+    "S25-049": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/049/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/049/candidatewise/history.csv"
+    },
+    "S25-050": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/050/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/050/candidatewise/history.csv"
+    },
+    "S25-051": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/051/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/051/candidatewise/history.csv"
+    },
+    "S25-052": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/052/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/052/candidatewise/history.csv"
+    },
+    "S25-053": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/053/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/053/candidatewise/history.csv"
+    },
+    "S25-054": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/054/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/054/candidatewise/history.csv"
+    },
+    "S25-055": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/055/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/055/candidatewise/history.csv"
+    },
+    "S25-056": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/056/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/056/candidatewise/history.csv"
+    },
+    "S25-057": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/057/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/057/candidatewise/history.csv"
+    },
+    "S25-058": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/058/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/058/candidatewise/history.csv"
+    },
+    "S25-059": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/059/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/059/candidatewise/history.csv"
+    },
+    "S25-060": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/060/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/060/candidatewise/history.csv"
+    },
+    "S25-061": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/061/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/061/candidatewise/history.csv"
+    },
+    "S25-062": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/062/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/062/candidatewise/history.csv"
+    },
+    "S25-063": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/063/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/063/candidatewise/history.csv"
+    },
+    "S25-064": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/064/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/064/candidatewise/history.csv"
+    },
+    "S25-065": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/065/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/065/candidatewise/history.csv"
+    },
+    "S25-066": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/066/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/066/candidatewise/history.csv"
+    },
+    "S25-067": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/067/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/067/candidatewise/history.csv"
+    },
+    "S25-068": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/068/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/068/candidatewise/history.csv"
+    },
+    "S25-069": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/069/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/069/candidatewise/history.csv"
+    },
+    "S25-070": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/070/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/070/candidatewise/history.csv"
+    },
+    "S25-071": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/071/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/071/candidatewise/history.csv"
+    },
+    "S25-072": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/072/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/072/candidatewise/history.csv"
+    },
+    "S25-073": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/073/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/073/candidatewise/history.csv"
+    },
+    "S25-074": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/074/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/074/candidatewise/history.csv"
+    },
+    "S25-075": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/075/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/075/candidatewise/history.csv"
+    },
+    "S25-076": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/076/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/076/candidatewise/history.csv"
+    },
+    "S25-077": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/077/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/077/candidatewise/history.csv"
+    },
+    "S25-078": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/078/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/078/candidatewise/history.csv"
+    },
+    "S25-079": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/079/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/079/candidatewise/history.csv"
+    },
+    "S25-080": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/080/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/080/candidatewise/history.csv"
+    },
+    "S25-081": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/081/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/081/candidatewise/history.csv"
+    },
+    "S25-082": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/082/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/082/candidatewise/history.csv"
+    },
+    "S25-083": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/083/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/083/candidatewise/history.csv"
+    },
+    "S25-084": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/084/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/084/candidatewise/history.csv"
+    },
+    "S25-085": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/085/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/085/candidatewise/history.csv"
+    },
+    "S25-086": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/086/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/086/candidatewise/history.csv"
+    },
+    "S25-087": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/087/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/087/candidatewise/history.csv"
+    },
+    "S25-088": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/088/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/088/candidatewise/history.csv"
+    },
+    "S25-089": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/089/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/089/candidatewise/history.csv"
+    },
+    "S25-090": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/090/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/090/candidatewise/history.csv"
+    },
+    "S25-091": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/091/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/091/candidatewise/history.csv"
+    },
+    "S25-092": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/092/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/092/candidatewise/history.csv"
+    },
+    "S25-093": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/093/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/093/candidatewise/history.csv"
+    },
+    "S25-094": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/094/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/094/candidatewise/history.csv"
+    },
+    "S25-095": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/095/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/095/candidatewise/history.csv"
+    },
+    "S25-096": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/096/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/096/candidatewise/history.csv"
+    },
+    "S25-097": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/097/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/097/candidatewise/history.csv"
+    },
+    "S25-098": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/098/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/098/candidatewise/history.csv"
+    },
+    "S25-099": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/099/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/099/candidatewise/history.csv"
+    },
+    "S25-100": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/100/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/100/candidatewise/history.csv"
+    },
+    "S25-101": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/101/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/101/candidatewise/history.csv"
+    },
+    "S25-102": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/102/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/102/candidatewise/history.csv"
+    },
+    "S25-103": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/103/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/103/candidatewise/history.csv"
+    },
+    "S25-104": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/104/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/104/candidatewise/history.csv"
+    },
+    "S25-105": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/105/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/105/candidatewise/history.csv"
+    },
+    "S25-106": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/106/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/106/candidatewise/history.csv"
+    },
+    "S25-107": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/107/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/107/candidatewise/history.csv"
+    },
+    "S25-108": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/108/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/108/candidatewise/history.csv"
+    },
+    "S25-109": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/109/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/109/candidatewise/history.csv"
+    },
+    "S25-110": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/110/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/110/candidatewise/history.csv"
+    },
+    "S25-111": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/111/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/111/candidatewise/history.csv"
+    },
+    "S25-112": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/112/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/112/candidatewise/history.csv"
+    },
+    "S25-113": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/113/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/113/candidatewise/history.csv"
+    },
+    "S25-114": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/114/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/114/candidatewise/history.csv"
+    },
+    "S25-115": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/115/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/115/candidatewise/history.csv"
+    },
+    "S25-116": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/116/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/116/candidatewise/history.csv"
+    },
+    "S25-117": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/117/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/117/candidatewise/history.csv"
+    },
+    "S25-118": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/118/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/118/candidatewise/history.csv"
+    },
+    "S25-119": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/119/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/119/candidatewise/history.csv"
+    },
+    "S25-120": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/120/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/120/candidatewise/history.csv"
+    },
+    "S25-121": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/121/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/121/candidatewise/history.csv"
+    },
+    "S25-122": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/122/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/122/candidatewise/history.csv"
+    },
+    "S25-123": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/123/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/123/candidatewise/history.csv"
+    },
+    "S25-124": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/124/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/124/candidatewise/history.csv"
+    },
+    "S25-125": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/125/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/125/candidatewise/history.csv"
+    },
+    "S25-126": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/126/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/126/candidatewise/history.csv"
+    },
+    "S25-127": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/127/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/127/candidatewise/history.csv"
+    },
+    "S25-128": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/128/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/128/candidatewise/history.csv"
+    },
+    "S25-129": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/129/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/129/candidatewise/history.csv"
+    },
+    "S25-130": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/130/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/130/candidatewise/history.csv"
+    },
+    "S25-131": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/131/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/131/candidatewise/history.csv"
+    },
+    "S25-132": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/132/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/132/candidatewise/history.csv"
+    },
+    "S25-133": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/133/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/133/candidatewise/history.csv"
+    },
+    "S25-134": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/134/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/134/candidatewise/history.csv"
+    },
+    "S25-135": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/135/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/135/candidatewise/history.csv"
+    },
+    "S25-136": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/136/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/136/candidatewise/history.csv"
+    },
+    "S25-137": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/137/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/137/candidatewise/history.csv"
+    },
+    "S25-138": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/138/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/138/candidatewise/history.csv"
+    },
+    "S25-139": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/139/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/139/candidatewise/history.csv"
+    },
+    "S25-140": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/140/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/140/candidatewise/history.csv"
+    },
+    "S25-141": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/141/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/141/candidatewise/history.csv"
+    },
+    "S25-142": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/142/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/142/candidatewise/history.csv"
+    },
+    "S25-143": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/143/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/143/candidatewise/history.csv"
+    },
+    "S25-144": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/144/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/144/candidatewise/history.csv"
+    },
+    "S25-145": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/145/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/145/candidatewise/history.csv"
+    },
+    "S25-146": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/146/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/146/candidatewise/history.csv"
+    },
+    "S25-147": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/147/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/147/candidatewise/history.csv"
+    },
+    "S25-148": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/148/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/148/candidatewise/history.csv"
+    },
+    "S25-149": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/149/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/149/candidatewise/history.csv"
+    },
+    "S25-150": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/150/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/150/candidatewise/history.csv"
+    },
+    "S25-151": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/151/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/151/candidatewise/history.csv"
+    },
+    "S25-152": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/152/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/152/candidatewise/history.csv"
+    },
+    "S25-153": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/153/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/153/candidatewise/history.csv"
+    },
+    "S25-154": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/154/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/154/candidatewise/history.csv"
+    },
+    "S25-155": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/155/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/155/candidatewise/history.csv"
+    },
+    "S25-156": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/156/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/156/candidatewise/history.csv"
+    },
+    "S25-157": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/157/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/157/candidatewise/history.csv"
+    },
+    "S25-158": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/158/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/158/candidatewise/history.csv"
+    },
+    "S25-159": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/159/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/159/candidatewise/history.csv"
+    },
+    "S25-160": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/160/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/160/candidatewise/history.csv"
+    },
+    "S25-161": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/161/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/161/candidatewise/history.csv"
+    },
+    "S25-162": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/162/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/162/candidatewise/history.csv"
+    },
+    "S25-163": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/163/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/163/candidatewise/history.csv"
+    },
+    "S25-164": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/164/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/164/candidatewise/history.csv"
+    },
+    "S25-165": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/165/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/165/candidatewise/history.csv"
+    },
+    "S25-166": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/166/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/166/candidatewise/history.csv"
+    },
+    "S25-167": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/167/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/167/candidatewise/history.csv"
+    },
+    "S25-168": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/168/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/168/candidatewise/history.csv"
+    },
+    "S25-169": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/169/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/169/candidatewise/history.csv"
+    },
+    "S25-170": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/170/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/170/candidatewise/history.csv"
+    },
+    "S25-171": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/171/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/171/candidatewise/history.csv"
+    },
+    "S25-172": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/172/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/172/candidatewise/history.csv"
+    },
+    "S25-173": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/173/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/173/candidatewise/history.csv"
+    },
+    "S25-174": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/174/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/174/candidatewise/history.csv"
+    },
+    "S25-175": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/175/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/175/candidatewise/history.csv"
+    },
+    "S25-176": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/176/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/176/candidatewise/history.csv"
+    },
+    "S25-177": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/177/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/177/candidatewise/history.csv"
+    },
+    "S25-178": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/178/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/178/candidatewise/history.csv"
+    },
+    "S25-179": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/179/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/179/candidatewise/history.csv"
+    },
+    "S25-180": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/180/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/180/candidatewise/history.csv"
+    },
+    "S25-181": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/181/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/181/candidatewise/history.csv"
+    },
+    "S25-182": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/182/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/182/candidatewise/history.csv"
+    },
+    "S25-183": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/183/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/183/candidatewise/history.csv"
+    },
+    "S25-184": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/184/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/184/candidatewise/history.csv"
+    },
+    "S25-185": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/185/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/185/candidatewise/history.csv"
+    },
+    "S25-186": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/186/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/186/candidatewise/history.csv"
+    },
+    "S25-187": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/187/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/187/candidatewise/history.csv"
+    },
+    "S25-188": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/188/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/188/candidatewise/history.csv"
+    },
+    "S25-189": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/189/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/189/candidatewise/history.csv"
+    },
+    "S25-190": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/190/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/190/candidatewise/history.csv"
+    },
+    "S25-191": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/191/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/191/candidatewise/history.csv"
+    },
+    "S25-192": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/192/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/192/candidatewise/history.csv"
+    },
+    "S25-193": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/193/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/193/candidatewise/history.csv"
+    },
+    "S25-194": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/194/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/194/candidatewise/history.csv"
+    },
+    "S25-195": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/195/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/195/candidatewise/history.csv"
+    },
+    "S25-196": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/196/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/196/candidatewise/history.csv"
+    },
+    "S25-197": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/197/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/197/candidatewise/history.csv"
+    },
+    "S25-198": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/198/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/198/candidatewise/history.csv"
+    },
+    "S25-199": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/199/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/199/candidatewise/history.csv"
+    },
+    "S25-200": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/200/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/200/candidatewise/history.csv"
+    },
+    "S25-201": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/201/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/201/candidatewise/history.csv"
+    },
+    "S25-202": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/202/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/202/candidatewise/history.csv"
+    },
+    "S25-203": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/203/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/203/candidatewise/history.csv"
+    },
+    "S25-204": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/204/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/204/candidatewise/history.csv"
+    },
+    "S25-205": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/205/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/205/candidatewise/history.csv"
+    },
+    "S25-206": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/206/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/206/candidatewise/history.csv"
+    },
+    "S25-207": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/207/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/207/candidatewise/history.csv"
+    },
+    "S25-208": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/208/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/208/candidatewise/history.csv"
+    },
+    "S25-209": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/209/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/209/candidatewise/history.csv"
+    },
+    "S25-210": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/210/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/210/candidatewise/history.csv"
+    },
+    "S25-211": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/211/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/211/candidatewise/history.csv"
+    },
+    "S25-212": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/212/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/212/candidatewise/history.csv"
+    },
+    "S25-213": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/213/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/213/candidatewise/history.csv"
+    },
+    "S25-214": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/214/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/214/candidatewise/history.csv"
+    },
+    "S25-215": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/215/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/215/candidatewise/history.csv"
+    },
+    "S25-216": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/216/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/216/candidatewise/history.csv"
+    },
+    "S25-217": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/217/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/217/candidatewise/history.csv"
+    },
+    "S25-218": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/218/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/218/candidatewise/history.csv"
+    },
+    "S25-219": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/219/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/219/candidatewise/history.csv"
+    },
+    "S25-220": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/220/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/220/candidatewise/history.csv"
+    },
+    "S25-221": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/221/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/221/candidatewise/history.csv"
+    },
+    "S25-222": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/222/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/222/candidatewise/history.csv"
+    },
+    "S25-223": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/223/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/223/candidatewise/history.csv"
+    },
+    "S25-224": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/224/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/224/candidatewise/history.csv"
+    },
+    "S25-225": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/225/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/225/candidatewise/history.csv"
+    },
+    "S25-226": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/226/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/226/candidatewise/history.csv"
+    },
+    "S25-227": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/227/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/227/candidatewise/history.csv"
+    },
+    "S25-228": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/228/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/228/candidatewise/history.csv"
+    },
+    "S25-229": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/229/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/229/candidatewise/history.csv"
+    },
+    "S25-230": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/230/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/230/candidatewise/history.csv"
+    },
+    "S25-231": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/231/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/231/candidatewise/history.csv"
+    },
+    "S25-232": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/232/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/232/candidatewise/history.csv"
+    },
+    "S25-233": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/233/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/233/candidatewise/history.csv"
+    },
+    "S25-234": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/234/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/234/candidatewise/history.csv"
+    },
+    "S25-235": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/235/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/235/candidatewise/history.csv"
+    },
+    "S25-236": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/236/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/236/candidatewise/history.csv"
+    },
+    "S25-237": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/237/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/237/candidatewise/history.csv"
+    },
+    "S25-238": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/238/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/238/candidatewise/history.csv"
+    },
+    "S25-239": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/239/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/239/candidatewise/history.csv"
+    },
+    "S25-240": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/240/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/240/candidatewise/history.csv"
+    },
+    "S25-241": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/241/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/241/candidatewise/history.csv"
+    },
+    "S25-242": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/242/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/242/candidatewise/history.csv"
+    },
+    "S25-243": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/243/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/243/candidatewise/history.csv"
+    },
+    "S25-244": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/244/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/244/candidatewise/history.csv"
+    },
+    "S25-245": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/245/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/245/candidatewise/history.csv"
+    },
+    "S25-246": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/246/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/246/candidatewise/history.csv"
+    },
+    "S25-247": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/247/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/247/candidatewise/history.csv"
+    },
+    "S25-248": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/248/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/248/candidatewise/history.csv"
+    },
+    "S25-249": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/249/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/249/candidatewise/history.csv"
+    },
+    "S25-250": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/250/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/250/candidatewise/history.csv"
+    },
+    "S25-251": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/251/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/251/candidatewise/history.csv"
+    },
+    "S25-252": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/252/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/252/candidatewise/history.csv"
+    },
+    "S25-253": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/253/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/253/candidatewise/history.csv"
+    },
+    "S25-254": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/254/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/254/candidatewise/history.csv"
+    },
+    "S25-255": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/255/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/255/candidatewise/history.csv"
+    },
+    "S25-256": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/256/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/256/candidatewise/history.csv"
+    },
+    "S25-257": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/257/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/257/candidatewise/history.csv"
+    },
+    "S25-258": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/258/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/258/candidatewise/history.csv"
+    },
+    "S25-259": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/259/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/259/candidatewise/history.csv"
+    },
+    "S25-260": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/260/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/260/candidatewise/history.csv"
+    },
+    "S25-261": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/261/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/261/candidatewise/history.csv"
+    },
+    "S25-262": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/262/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/262/candidatewise/history.csv"
+    },
+    "S25-263": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/263/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/263/candidatewise/history.csv"
+    },
+    "S25-264": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/264/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/264/candidatewise/history.csv"
+    },
+    "S25-265": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/265/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/265/candidatewise/history.csv"
+    },
+    "S25-266": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/266/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/266/candidatewise/history.csv"
+    },
+    "S25-267": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/267/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/267/candidatewise/history.csv"
+    },
+    "S25-268": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/268/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/268/candidatewise/history.csv"
+    },
+    "S25-269": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/269/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/269/candidatewise/history.csv"
+    },
+    "S25-270": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/270/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/270/candidatewise/history.csv"
+    },
+    "S25-271": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/271/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/271/candidatewise/history.csv"
+    },
+    "S25-272": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/272/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/272/candidatewise/history.csv"
+    },
+    "S25-273": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/273/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/273/candidatewise/history.csv"
+    },
+    "S25-274": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/274/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/274/candidatewise/history.csv"
+    },
+    "S25-275": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/275/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/275/candidatewise/history.csv"
+    },
+    "S25-276": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/276/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/276/candidatewise/history.csv"
+    },
+    "S25-277": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/277/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/277/candidatewise/history.csv"
+    },
+    "S25-278": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/278/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/278/candidatewise/history.csv"
+    },
+    "S25-279": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/279/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/279/candidatewise/history.csv"
+    },
+    "S25-280": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/280/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/280/candidatewise/history.csv"
+    },
+    "S25-281": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/281/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/281/candidatewise/history.csv"
+    },
+    "S25-282": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/282/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/282/candidatewise/history.csv"
+    },
+    "S25-283": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/283/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/283/candidatewise/history.csv"
+    },
+    "S25-284": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/284/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/284/candidatewise/history.csv"
+    },
+    "S25-285": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/285/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/285/candidatewise/history.csv"
+    },
+    "S25-286": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/286/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/286/candidatewise/history.csv"
+    },
+    "S25-287": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/287/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/287/candidatewise/history.csv"
+    },
+    "S25-288": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/288/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/288/candidatewise/history.csv"
+    },
+    "S25-289": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/289/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/289/candidatewise/history.csv"
+    },
+    "S25-290": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/290/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/290/candidatewise/history.csv"
+    },
+    "S25-291": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/291/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/291/candidatewise/history.csv"
+    },
+    "S25-292": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/292/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/292/candidatewise/history.csv"
+    },
+    "S25-293": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/293/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/293/candidatewise/history.csv"
+    },
+    "S25-294": {
+      "current_key": "elections/2026_RESULTS/states/S25/constituencies/294/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/S25/constituencies/294/candidatewise/history.csv"
+    },
+    "U07-001": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/001/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/001/candidatewise/history.csv"
+    },
+    "U07-002": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/002/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/002/candidatewise/history.csv"
+    },
+    "U07-003": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/003/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/003/candidatewise/history.csv"
+    },
+    "U07-004": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/004/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/004/candidatewise/history.csv"
+    },
+    "U07-005": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/005/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/005/candidatewise/history.csv"
+    },
+    "U07-006": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/006/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/006/candidatewise/history.csv"
+    },
+    "U07-007": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/007/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/007/candidatewise/history.csv"
+    },
+    "U07-008": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/008/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/008/candidatewise/history.csv"
+    },
+    "U07-009": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/009/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/009/candidatewise/history.csv"
+    },
+    "U07-010": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/010/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/010/candidatewise/history.csv"
+    },
+    "U07-011": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/011/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/011/candidatewise/history.csv"
+    },
+    "U07-012": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/012/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/012/candidatewise/history.csv"
+    },
+    "U07-013": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/013/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/013/candidatewise/history.csv"
+    },
+    "U07-014": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/014/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/014/candidatewise/history.csv"
+    },
+    "U07-015": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/015/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/015/candidatewise/history.csv"
+    },
+    "U07-016": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/016/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/016/candidatewise/history.csv"
+    },
+    "U07-017": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/017/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/017/candidatewise/history.csv"
+    },
+    "U07-018": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/018/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/018/candidatewise/history.csv"
+    },
+    "U07-019": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/019/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/019/candidatewise/history.csv"
+    },
+    "U07-020": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/020/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/020/candidatewise/history.csv"
+    },
+    "U07-021": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/021/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/021/candidatewise/history.csv"
+    },
+    "U07-022": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/022/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/022/candidatewise/history.csv"
+    },
+    "U07-023": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/023/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/023/candidatewise/history.csv"
+    },
+    "U07-024": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/024/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/024/candidatewise/history.csv"
+    },
+    "U07-025": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/025/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/025/candidatewise/history.csv"
+    },
+    "U07-026": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/026/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/026/candidatewise/history.csv"
+    },
+    "U07-027": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/027/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/027/candidatewise/history.csv"
+    },
+    "U07-028": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/028/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/028/candidatewise/history.csv"
+    },
+    "U07-029": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/029/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/029/candidatewise/history.csv"
+    },
+    "U07-030": {
+      "current_key": "elections/2026_RESULTS/states/U07/constituencies/030/candidatewise/current.csv",
+      "history_key": "elections/2026_RESULTS/states/U07/constituencies/030/candidatewise/history.csv"
+    }
+  }
 }
