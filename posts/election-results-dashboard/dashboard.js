@@ -255,6 +255,7 @@
   const SEAT_TREND_SERIES_LIMIT = 6;
   const CANDIDATE_SERIES_LIMIT = 5;
   const REGIONAL_GROUP_SERIES_LIMIT = 6;
+  const LIVE_AUTO_REFRESH_INTERVAL_MS = 60 * 1000;
   const mapDataPromises = {};
   const REGIONAL_GROUP_COLORS = [
     { fill: "#fef3c7", stroke: "#d97706" },
@@ -280,6 +281,7 @@
   let activeViewTab = "overview";
   let activeRegionalGroupingKey = "";
   let isRefreshingData = false;
+  let liveAutoRefreshTimer = null;
   let regionalGroupDefinitionsLoaded = false;
   let regionalGroupDefinitionsPromise = null;
 
@@ -1077,6 +1079,27 @@
 
   function hasValidTimestamp(row) {
     return row && Number.isFinite(row.timestampMs) && row.timestampMs > 0;
+  }
+
+  function hasMeaningfulCandidateValue(row) {
+    if (!row) return false;
+    return (row.totalVotes || 0) > 0 || (row.evmVotes || 0) > 0 || (row.postalVotes || 0) > 0;
+  }
+
+  function getLatestTimestampGroup(rows, isMeaningfulRow) {
+    const validRows = Array.isArray(rows) ? rows.filter(hasValidTimestamp) : [];
+    if (!validRows.length) return [];
+
+    const timestamps = [...new Set(validRows.map((row) => row.timestampMs))].sort((a, b) => b - a);
+    for (const timestamp of timestamps) {
+      const batch = validRows.filter((row) => row.timestampMs === timestamp);
+      if (!isMeaningfulRow || batch.some((row) => isMeaningfulRow(row))) {
+        return batch;
+      }
+    }
+
+    const latestTimestamp = timestamps[0];
+    return validRows.filter((row) => row.timestampMs === latestTimestamp);
   }
 
   function filterTimelineOutliers(times) {
@@ -2586,9 +2609,7 @@
   function buildCandidateSeries(rows, currentRows) {
     const validRows = rows.filter(hasValidTimestamp);
     const validCurrentRows = currentRows.filter(hasValidTimestamp);
-    const latestValidRows = validRows.length
-      ? validRows.filter((row) => row.timestampMs === Math.max(...validRows.map((item) => item.timestampMs)))
-      : [];
+    const latestValidRows = getLatestTimestampGroup(validRows, hasMeaningfulCandidateValue);
     const referenceRows = validCurrentRows.length ? validCurrentRows : latestValidRows.length ? latestValidRows : currentRows;
 
     const topCandidates = referenceRows
@@ -3546,9 +3567,7 @@
       const historyRows = historyText
         ? normalizeCandidateRows(parseCsv(historyText)).filter((row) => hasValidTimestamp(row))
         : [];
-      const latestHistoryRows = historyRows.length
-        ? historyRows.filter((row) => row.timestampMs === Math.max(...historyRows.map((item) => item.timestampMs)))
-        : [];
+      const latestHistoryRows = getLatestTimestampGroup(historyRows, hasMeaningfulCandidateValue);
 
       const payload = {
         currentRows: currentRows.length ? currentRows : latestHistoryRows,
@@ -3813,10 +3832,26 @@
     });
   }
 
+  function bindLiveAutoRefresh() {
+    if (liveAutoRefreshTimer) {
+      window.clearInterval(liveAutoRefreshTimer);
+      liveAutoRefreshTimer = null;
+    }
+    if (getDatasetMode() !== "live") {
+      return;
+    }
+    liveAutoRefreshTimer = window.setInterval(() => {
+      refreshDashboardData().catch((error) => {
+        console.error("Auto-refresh failed:", error);
+      });
+    }, LIVE_AUTO_REFRESH_INTERVAL_MS);
+  }
+
   async function initializeDashboard() {
     bindStateButtons();
     bindPageTabs();
     bindRefreshButton();
+    bindLiveAutoRefresh();
     bindSeatTrendControls();
     bindRegionalControls();
     loadRegionalGroupDefinitions().then(() => {
