@@ -1724,7 +1724,7 @@
   }
 
   async function fetchCsv(url) {
-    const response = await fetch(buildFetchUrl(url));
+    const response = await fetch(buildFetchUrl(url), { cache: "no-store" });
     if (!response.ok) {
       throw new Error(`Failed to fetch ${url}: ${response.status}`);
     }
@@ -1733,7 +1733,7 @@
 
   async function fetchOptionalCsv(url) {
     if (!url) return null;
-    const response = await fetch(buildFetchUrl(url));
+    const response = await fetch(buildFetchUrl(url), { cache: "no-store" });
     if (response.status === 404) {
       return null;
     }
@@ -1744,7 +1744,7 @@
   }
 
   async function fetchJson(url) {
-    const response = await fetch(buildFetchUrl(url));
+    const response = await fetch(buildFetchUrl(url), { cache: "no-store" });
     if (!response.ok) {
       throw new Error(`Failed to fetch ${url}: ${response.status}`);
     }
